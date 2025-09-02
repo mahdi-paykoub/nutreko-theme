@@ -92,7 +92,7 @@ body {
 
 }
 
-.obect-fit-cover {
+.object-fit-cover {
     object-fit: cover;
 }
 
@@ -164,7 +164,8 @@ a {
 }
 
 .shop-btn {
-    padding: 12px 90px;;
+    padding: 12px 90px;
+    ;
     border-radius: 31px;
 }
 
@@ -199,16 +200,42 @@ a {
 }
 
 .banner-img {
- 
     border-radius: 20px;
-    background: url(../images/slider/h1_bn-1.jpg);
-       height: 550px;
-}
-.banner-img-2{
-     background: url(../images/slider/h1_bn-2.jpg);
+    height: 550px;
 }
 
+.banner-img+div {
+    left: 0;
+    top: 0;
+}
 
+.banner-img-2 {
+    background: url(../images/slider/h1_bn-2.jpg);
+}
+
+.img-hover {
+    display: block;
+    overflow: hidden;
+    /* تا چیزی بیرون نزنه */
+    border-radius: 12px;
+    /* اختیاری */
+}
+
+.img-hover img {
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+.img-hover:hover img {
+    transform: scale(1.08);
+    /* کمی زوم */
+    filter: brightness(0.8);
+    /* کمی تیره‌تر */
+}
+
+.category-img {
+    min-height: 350px;
+}
 
 .banner-badge {
     background-color: #3fc9d3;
@@ -220,14 +247,25 @@ a {
 
 .banner-btn {
     border: 1px solid white;
-    
+
 }
 
 
+.first-title {
+    font-size: 70px;
 
+}
 
+.first-title .first-part {
+    color: #a8a8a8;
+}
 
-
+.cat-btn {
+    border: 1px solid #e0e0e0;
+    background: transparent;
+    padding: 12px 0 12px 0;
+    border-radius: 40px;
+}
 
 /* media */
 @media only screen and (min-width: 576px) {}
