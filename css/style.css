@@ -575,7 +575,16 @@ a {
 .brand_s img:hover {
     opacity: 1;
 }
-
+.read-more-btn{
+    width: fit-content;
+    border-bottom: 1px solid #000;
+}
+.cat-blog-box{
+    padding: 7px 13px;
+    border-radius: 20px;
+    border: 1px solid black;
+    bottom: -15px;right: 15px;
+}
 
 /* media */
 @media only screen and (min-width: 576px) {}
