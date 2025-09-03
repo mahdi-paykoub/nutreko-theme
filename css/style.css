@@ -366,7 +366,7 @@ a {
 }
 
 .product-swiper-card:hover .img {
-    transform: translateY(-13px);
+    transform: translateY(-7px);
 }
 
 .product-swiper-card:hover .price {
@@ -446,6 +446,35 @@ a {
             #ffffff 100%
             /* تا آخر سفید */
         );
+}
+
+.hover-colo:hover {
+    color: #000000;
+    transition: .3s all;
+}
+
+.hover-colo-btn {
+    padding: 10px 15px;
+}
+
+.hover-colo-btn.active {
+    background-color: #8cff64 !important;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.hover-colo-btn svg {
+    display: none;
+}
+.hover-colo-btn.active svg {
+    display: block;
+}
+
+.left-arrow-icon-btn {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
 }
 
 /* media */
