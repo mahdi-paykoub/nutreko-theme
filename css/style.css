@@ -119,6 +119,10 @@ a {
     color: #000000;
 }
 
+.c-sec-color {
+    color: #a8a8a8;
+}
+
 .menu-search-inp::placeholder {
     font-size: 14px;
     color: #a8a8a8;
@@ -267,6 +271,148 @@ a {
     border-radius: 40px;
 }
 
+.border-line {
+    width: 100%;
+    height: 5px;
+    background-color: #f4f4f4;
+}
+
+.product-first-clumn {
+    height: 530px;
+}
+
+.product-first-clumn-img {
+    filter: brightness(40%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+    border-radius: 20px;
+
+}
+.product-first-clumn:hover .product-first-clumn-img{
+     filter: brightness(80%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+}
+.pro-clumn {
+    font-size: 70px;
+}
+
+.pro-clumn .first-part {
+    color: #a8a8a8;
+}
+
+.price-type-badge {
+    padding: 4px 17px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.price-type-badge.red {
+    color: #EE440E;
+    border-color: #EE440E;
+}
+
+.price-type-badge.green {
+    color: #61d7ba;
+    border-color: #61d7ba;
+}
+
+.price-type-badge.purpule {
+    color: #8aa9d8;
+    border-color: #8aa9d8;
+}
+
+.bottom-of-card {
+    background-color: #8cff64 !important;
+    height: 40px !important;
+    transition: .4s all;
+}
+
+.product-swiper-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-swiper-card .bottom-of-card {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    /* مخفی پایین کارت */
+    background: #fff;
+    /* یا هر رنگی */
+    padding: 15px;
+    transition: all 0.3s ease;
+    /* انیمیشن حرکت */
+    opacity: 0;
+    /* محو بودن اولش */
+}
+
+/* .product-swiper-card:hover {
+    background-color: #f8f8f8;
+} */
+
+.product-swiper-card:hover .bottom-of-card {
+    bottom: 0;
+    /* بیاد بالا */
+    opacity: 1;
+    /* شفاف بشه */
+}
+
+.product-swiper-card .img,
+.product-swiper-card .price {
+    transition: all 0.3s ease;
+    /* انیمیشن حرکت */
+
+}
+
+.product-swiper-card:hover .img {
+    transform: translateY(-13px);
+}
+
+.product-swiper-card:hover .price {
+    transform: translateY(-35px);
+}
+
+.product-swiper-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-swiper-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    /* شفاف در حالت عادی */
+    transition: background 0.3s ease;
+}
+
+.product-swiper-card:hover::after {
+    background: rgba(0, 0, 0, 0.05);
+    /* خاکستری ملایم */
+}
+
+.product-swiper-card.position-relative .position-absolute {
+    top: 100px;
+    left: 15px;
+    display: none;
+}
+.product-swiper-card.position-relative .position-absolute div{
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 50%;
+}
+
+.product-swiper-card.position-relative:hover .position-absolute {
+    display: block;
+    z-index: 1000;
+}
+.border-c{
+    border: 1px solid rgb(236, 236, 236);
+}
+.py-6{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
 /* media */
 @media only screen and (min-width: 576px) {}
 
