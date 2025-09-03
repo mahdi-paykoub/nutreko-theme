@@ -286,9 +286,11 @@ a {
     border-radius: 20px;
 
 }
-.product-first-clumn:hover .product-first-clumn-img{
-     filter: brightness(80%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+
+.product-first-clumn:hover .product-first-clumn-img {
+    filter: brightness(80%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
 }
+
 .pro-clumn {
     font-size: 70px;
 }
@@ -395,7 +397,8 @@ a {
     left: 15px;
     display: none;
 }
-.product-swiper-card.position-relative .position-absolute div{
+
+.product-swiper-card.position-relative .position-absolute div {
     width: 35px;
     height: 35px;
     border: 1px solid rgb(192, 192, 192);
@@ -406,13 +409,45 @@ a {
     display: block;
     z-index: 1000;
 }
-.border-c{
+
+.border-c {
     border: 1px solid rgb(236, 236, 236);
 }
-.py-6{
+
+.py-6 {
     padding-top: 5em;
     padding-bottom: 5em;
 }
+
+.intro-txt {
+    font-size: 65px;
+}
+
+.lh-2 {
+    line-height: 2;
+}
+
+.c-sec-2-color {
+    color: #5b5b5b;
+}
+
+.intro-img {
+    height: 840px;
+}
+
+.back-color-co {
+    background: linear-gradient(to right,
+            #f5f5f5 40%,
+            /* از 0 تا 40 درصد خاکستری */
+            #f5f5f5 40%,
+            /* مرز صاف */
+            #ffffff 40%,
+            /* از 40 به بعد سفید */
+            #ffffff 100%
+            /* تا آخر سفید */
+        );
+}
+
 /* media */
 @media only screen and (min-width: 576px) {}
 
