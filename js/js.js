@@ -12,7 +12,7 @@
     },
   });
 
-  var swiper = new Swiper(".mySwiper_2", {
+  var mySwiper_2 = new Swiper(".mySwiper_2", {
     slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
@@ -28,5 +28,16 @@
       320: { slidesPerView: 1 },
       768: { slidesPerView: 2 },
       1024: { slidesPerView: 4 },
+    },
+  });
+
+   const brand_s = new Swiper('.brand_s', {
+    slidesPerView: 5,      // تعداد تصاویر در یک ردیف
+    spaceBetween: 10,      // فاصله بین تصاویر
+    loop: true,            // حرکت بی‌نهایت
+    speed: 5000,           // سرعت حرکت (میلی‌ثانیه)
+    autoplay: {
+      delay: 0,            // بدون توقف
+      disableOnInteraction: false,
     },
   });
