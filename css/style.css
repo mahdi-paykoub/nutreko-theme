@@ -586,6 +586,60 @@ a {
     bottom: -15px;right: 15px;
 }
 
+
+
+
+
+
+
+
+
+.swiper-slide {
+  width: 100%; /* اندازه تصویر */
+}
+
+.img-hover-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.img-hover-2 img {
+  width: 100%;
+  transition: 0.3s;
+  display: block;
+  border-radius: 20px;
+}
+
+.img-hover-2:hover img {
+  filter: brightness(70%);
+}
+
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.img-hover-2:hover .hover-icon {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 /* media */
 @media only screen and (min-width: 576px) {}
 

@@ -55,3 +55,9 @@ var blog_s = new Swiper(".blog_s", {
     clickable: true,
   },
 });
+
+const gallery_s = new Swiper('.gallery_s', {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+});
