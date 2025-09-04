@@ -77,7 +77,9 @@ const topbartext = new Swiper(".topbartext", {
 const slider_swiper = new Swiper(".slider_swiper", {
   slidesPerView: 1,       // فقط یک اسلاید
   effect: "fade",          // افکت محو شدن
-  loop: true,              // لوپ بی‌نهایت
+  loop: true,
+  speed: 1000, // سرعت تعویض اسلاید بر حسب میلی‌ثانیه (1s)
+  // لوپ بی‌نهایت
   autoplay: {
     delay: 5000,           // ۳ ثانیه بین اسلایدها
     disableOnInteraction: false,

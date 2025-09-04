@@ -17,13 +17,13 @@
     <header>
         <!-- topbar -->
         <div class="topbar bg-green">
-            <div class="d-flex p-3 justify-content-between align-items-center">
-                <div>
+            <div class="d-flex p-3 justify-content-center justify-content-md-between align-items-center">
+                <div class="">
                     <span class="">شماره تماس:</span>
 
                     <span dir="ltr" class="fw-600 fs17 fw-700"> +084 123 - 456 88</span>
                 </div>
-                <div class="w-50" dir="ltr">
+                <div class="w-50 d-none d-md-block" dir="ltr">
                     <div class="ticker">
                         <div class="ticker__wrap">
                             <div class="ticker__item">
@@ -113,7 +113,7 @@
 
 
                 </div>
-                <div class="">
+                <div class=" d-none d-md-block">
                     <img src="images/en.jpg" width="20" height="20" class="rounded-circle object-fit-cover" alt="">
                     <span class="fs15 me-1">فارسی</span>
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16"
@@ -126,67 +126,131 @@
         </div>
         <!-- menu -->
         <div class="menu d-flex align-items-center justify-content-between bg-white px-4">
-            <!-- first box -->
             <div class="logo-box">
                 <img src="images/logo.svg" width="" alt="">
             </div>
-            <!-- second box -->
-            <div class="d-flex align-items-center">
-                <ul class="p-0 m-0">
-                    <li>
-                        <a href="">
-                            خانه
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                            </svg>
-                        </a>
+            <div class="d-flex align-items-center position-relative">
+                <ul class="main-menu p-0 m-0 d-flex list-unstyled">
+                    <li class="menu-item">
+                        <a href="#">خانه</a>
+                        <!-- Full-width mega menu -->
+
                     </li>
-                    <li>
-                        <a href="">
-                            فروشگاه
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                            </svg>
-                        </a>
+                    <div class="mega-menu full-width">
+                        <div class="d-flex justify-content-between p-4">
+                            <img src="images/gallery-1.jpg" class="w-25" alt="">
+                            <img src="images/gallery-2.jpg" class="w-25" alt="">
+                            <img src="images/gallery-3.jpg" class="w-25" alt="">
+                            <img src="images/gallery-4.jpg" class="w-25" alt="">
+                        </div>
+                    </div>
+                    <li class="menu-item">
+                        <a href="#">فروشگاه</a>
+                        <!-- Small submenu -->
+                        <ul class="submenu py-3 small-menu p-2 list-unstyled bg-white shadow">
+                            <li><a href="#">مقاله 1</a></li>
+                            <li><a href="#">مقاله 2</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="">
-                            بلاگ
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                            </svg>
-                        </a>
+
+                    <li class="menu-item">
+                        <a href="#">بلاگ</a>
+                        <!-- Small submenu -->
+                        <ul class="submenu  py-3 small-menu p-2 list-unstyled bg-white shadow">
+                            <li><a href="#">مقاله 1</a></li>
+                            <li><a href="#">مقاله 2</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="">
-                            صفحات
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                            </svg>
-                        </a>
+
+                    <li class="menu-item">
+                        <a href="#">صفحات</a>
+                        <!-- Full-width mega menu with 4 columns + image -->
+                        <div class="mega-menu full-width px-5 py-4">
+                            <div class="row p-4">
+                                <div class="col-2">
+                                    <div class="fw-700 fs-18">
+                                        لیست‌ منو‌ها
+                                    </div>
+                                    <div class="meg-mn">
+                                        <ul class="p-0 m-0">
+                                            <li><a href="">1 - منو اول</a></li>
+                                            <li><a href="">2 - منو دوم</a></li>
+                                            <li><a href="">3 - منو سوم</a></li>
+                                            <li><a href="">4 - منو چهارم</a></li>
+                                            <li><a href="">5 - منو پنجم</a></li>
+                                            <li><a href="">6 - منو ششم</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="fw-700 fs-18">
+                                        لیست‌ منو‌ها
+                                    </div>
+                                    <div class="meg-mn">
+                                        <ul class="p-0 m-0">
+                                            <li><a href="">1 - منو اول</a></li>
+                                            <li><a href="">2 - منو دوم</a></li>
+                                            <li><a href="">3 - منو سوم</a></li>
+                                            <li><a href="">4 - منو چهارم</a></li>
+                                            <li><a href="">5 - منو پنجم</a></li>
+                                           
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="fw-700 fs-18">
+                                        لیست‌ منو‌ها
+                                    </div>
+                                    <div class="meg-mn">
+                                        <ul class="p-0 m-0">
+                                            <li><a href="">1 - منو اول</a></li>
+                                            <li><a href="">2 - منو دوم</a></li>
+                                            <li><a href="">3 - منو سوم</a></li>
+                                           
+                                        </ul>
+
+                                    </div>
+                                      <div class="fw-700 fs-18 mt-3">
+                                        لیست‌ منو‌ها
+                                    </div>
+                                    <div class="meg-mn ">
+                                        <ul class="p-0 m-0">
+                                            <li><a href="">1 - منو اول</a></li>
+                                            <li><a href="">2 - منو دوم</a></li>
+                                           
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="fw-700 fs-18">
+                                        لیست‌ منو‌ها
+                                    </div>
+                                    <div class="meg-mn">
+                                        <ul class="p-0 m-0">
+                                            <li><a href="">1 - منو اول</a></li>
+                                            <li><a href="">2 - منو دوم</a></li>
+                                            <li><a href="">3 - منو سوم</a></li>
+                                            <li><a href="">4 - منو چهارم</a></li>
+                                            
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/slider/ra.JPG" class="w-100 br-20 object-fit-cover" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li>
-                        <a href="">
-                            ارتباط با ما
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                height="15" width="15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="none" d="M0 0h24v24H0V0z"></path>
-                                <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
-                            </svg>
-                        </a>
+
+                    <li class="menu-item">
+                        <a href="#">ارتباط با ما</a>
                     </li>
                 </ul>
             </div>
-
-            <!-- thid box -->
             <div class="d-flex align-items-center position-relative ">
                 <div class="border-start ps-3 d-flex align-items-center">
                     <input type="text" class="menu-search-inp border-0 fs14 px-4"
@@ -224,6 +288,8 @@
 
             </div>
         </div>
+
+
     </header>
 
     <!-- slider -->
@@ -244,13 +310,13 @@
                                 </div>
                                 <h1 class="fw-800 text-white large-txt mt-2">
                                     <span class="yellow">
-                                        تمرین قــوی 
+                                        تمرین قــوی
                                     </span>
 
                                     <br>
                                     در مسیر ...
                                     <br>
-                                   
+
 
                                 </h1>
                                 <div class="text-white fw-600 fs20">
@@ -346,7 +412,7 @@
                 </div>
             </div>
             <!-- اگر بخوای دکمه‌ها -->
-              <div class="swiper-pagination pb-4"></div>
+            <div class="swiper-pagination pb-4"></div>
 
         </div>
 
@@ -1128,7 +1194,7 @@
                         d="M55.5149 48.2311L57.0303 51.3016C57.1847 51.6143 57.483 51.8311 57.8282 51.8812L61.2167 52.3736C62.0858 52.4999 62.4328 53.568 61.8039 54.181L59.3519 56.5711C59.1022 56.8146 58.9882 57.1652 59.0472 57.509L59.626 60.8839C59.7745 61.7495 58.8659 62.4096 58.0885 62.0008L55.0578 60.4075C54.749 60.2452 54.3803 60.2452 54.0717 60.4075L51.0409 62.0008C50.2635 62.4096 49.3549 61.7495 49.5034 60.8839L50.0823 57.509C50.1413 57.1652 50.0273 56.8145 49.7775 56.5711L47.3255 54.181C46.6967 53.568 47.0437 52.4999 47.9128 52.3736L51.3013 51.8812C51.6464 51.8311 51.9448 51.6143 52.0992 51.3016L53.6145 48.2311C54.0032 47.4435 55.1262 47.4435 55.5149 48.2311Z"
                         stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
-                <div class="fw-700 fs20 mt-3">
+                <div class="fw-700 fs-1820 mt-3">
                     بیش از ۲ میلیون مشتری راضی
                 </div>
                 <div class="fw-700 mt-2 c-sec-color">
@@ -1163,7 +1229,7 @@
                         </g>
                     </g>
                 </svg>
-                <div class="fw-700 fs20 mt-3">
+                <div class="fw-700 fs-1820 mt-3">
                     کلیک و جمع آوری کنید
 
                 </div>
@@ -1195,7 +1261,7 @@
                             stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg>
-                <div class="fw-700 fs20 mt-3">
+                <div class="fw-700 fs-1820 mt-3">
                     هدیه رایگان با سفارش بالای ۱۵۰ تومان
                 </div>
                 <div class="fw-700 mt-2 c-sec-color">
@@ -1241,7 +1307,7 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <div class="fw-700 fs20 mt-3">
+                <div class="fw-700 fs-1820 mt-3">
 
                     تحویل سریع
                 </div>
@@ -1316,7 +1382,7 @@
                     <img src="images/slider/h1_img-2.png" class="position-absolute object-fit-cover" alt="">
                     <div>
                         <button @click="tab = 'tab1'" :class="tab === 'tab1' ? 'active c-sec-color' : 'c-sec-color'"
-                            class="bg-transparent border-0 fw-700 fs22 hover-colo-btn d-flex w-100 align-items-center justify-content-between">
+                            class="bg-transparent border-0 fw-700 fs-1822 hover-colo-btn d-flex w-100 align-items-center justify-content-between">
                             <div>
                                 پروتئین وی
                             </div>
@@ -1332,7 +1398,7 @@
                     </div>
                     <div>
                         <button @click="tab = 'tab2'" :class="tab === 'tab2' ? 'active c-sec-color' : 'c-sec-color'"
-                            class="bg-transparent border-0 fw-700 fs22 hover-colo-btn d-flex w-100 align-items-center justify-content-between">
+                            class="bg-transparent border-0 fw-700 fs-1822 hover-colo-btn d-flex w-100 align-items-center justify-content-between">
                             <div>
                                 پروتئین وی
                             </div>
@@ -1348,7 +1414,7 @@
                     </div>
                     <div>
                         <button @click="tab = 'tab3'" :class="tab === 'tab3' ? 'active c-sec-color' : 'c-sec-color'"
-                            class="bg-transparent border-0 fw-700 fs22 hover-colo-btn d-flex w-100 align-items-center justify-content-between">
+                            class="bg-transparent border-0 fw-700 fs-1822 hover-colo-btn d-flex w-100 align-items-center justify-content-between">
                             <div>
                                 پروتئین وی
                             </div>
