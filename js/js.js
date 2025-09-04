@@ -73,3 +73,24 @@ const topbartext = new Swiper(".topbartext", {
     disableOnInteraction: false,
   },
 });
+
+const slider_swiper = new Swiper(".slider_swiper", {
+  slidesPerView: 1,       // فقط یک اسلاید
+  effect: "fade",          // افکت محو شدن
+  loop: true,              // لوپ بی‌نهایت
+  autoplay: {
+    delay: 5000,           // ۳ ثانیه بین اسلایدها
+    disableOnInteraction: false,
+  },
+  fadeEffect: {
+    crossFade: true,       // محو شدن کامل بین اسلایدها
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,       // کاربر می‌تواند روی نقطه کلیک کند
+  },
+});

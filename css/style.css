@@ -147,6 +147,40 @@ a {
     background-size: cover;
 }
 
+.slider-2 {
+    height: 780px;
+    background: url(../images/slider/download\ \(2\).png);
+    width: 100%;
+    background-size: cover;
+}
+
+.slider-3 {
+    height: 780px;
+    background: url(../images/slider/download\ \(2\).png);
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+/* همه نقاط (غیرفعال) */
+.swiper-pagination-bullet {
+    background-color: white !important;
+    width: 11px !important;
+    height: 11px !important;
+}
+
+/* نقطه فعال */
+.swiper-pagination-bullet-active {
+    border: 3px solid #8cff64 !important;
+    background-color: transparent !important;
+     width: 11px !important;
+    height: 11px !important;
+
+}
+
+
+
 .br-20 {
     border-radius: 20px;
 }
@@ -309,6 +343,14 @@ a {
 .price-type-badge.red {
     color: #EE440E;
     border-color: #EE440E;
+}
+
+.yellow {
+    color: rgb(255, 185, 18);
+}
+
+.orange {
+    color: rgb(254, 124, 9);
 }
 
 .price-type-badge.green {
@@ -678,28 +720,33 @@ a {
 
 
 .ticker {
-  width: 100%;
-  overflow: hidden;
-  background: #111;
-  color: #fff;
-  font-size: 18px;
-  white-space: nowrap;
-  box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    font-size: 18px;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 .ticker__wrap {
-  display: inline-block;
-  animation: ticker 20s linear infinite;
+    display: inline-block;
+    animation: ticker 20s linear infinite;
 }
 
 .ticker__item {
-  display: inline-block;
-  padding: 0 2rem;
+    display: inline-block;
+    padding: 0 2rem;
 }
 
 @keyframes ticker {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* نصف چون دوبار داریم */
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* نصف چون دوبار داریم */
 }
 
 
