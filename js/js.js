@@ -61,3 +61,15 @@ const gallery_s = new Swiper('.gallery_s', {
   spaceBetween: 30,
   loop: true,
 });
+
+const topbartext = new Swiper(".topbartext", {
+  slidesPerView: 2,    // تعداد اسلاید قابل نمایش
+  spaceBetween: 5,       // فاصله بین اسلایدها
+  loop: true,            // بی‌نهایت
+  allowTouchMove: false, // کاربر نتونه با دست متوقف کنه
+  speed: 5000,           // سرعت حرکت کل اسلایدها
+  autoplay: {
+    delay: 0,            // بدون مکث
+    disableOnInteraction: false,
+  },
+});

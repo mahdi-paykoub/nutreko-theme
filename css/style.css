@@ -575,15 +575,18 @@ a {
 .brand_s img:hover {
     opacity: 1;
 }
-.read-more-btn{
+
+.read-more-btn {
     width: fit-content;
     border-bottom: 1px solid #000;
 }
-.cat-blog-box{
+
+.cat-blog-box {
     padding: 7px 13px;
     border-radius: 20px;
     border: 1px solid black;
-    bottom: -15px;right: 15px;
+    bottom: -15px;
+    right: 15px;
 }
 
 
@@ -595,46 +598,109 @@ a {
 
 
 .swiper-slide {
-  width: 100%; /* اندازه تصویر */
+    width: 100%;
+    /* اندازه تصویر */
 }
 
 .img-hover-2 {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .img-hover-2 img {
-  width: 100%;
-  transition: 0.3s;
-  display: block;
-  border-radius: 20px;
+    width: 100%;
+    transition: 0.3s;
+    display: block;
+    border-radius: 20px;
 }
 
 .img-hover-2:hover img {
-  filter: brightness(70%);
+    filter: brightness(70%);
 }
 
 .hover-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  opacity: 0;
-  transition: 0.3s;
-  pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    opacity: 0;
+    transition: 0.3s;
+    pointer-events: none;
 }
 
 .img-hover-2:hover .hover-icon {
-  opacity: 1;
+    opacity: 1;
+}
+
+
+
+.text-green {
+    color: #8CFF64;
+}
+
+.footer {
+    background-color: #202020;
+}
+
+.footer-border-bottom {
+    border-bottom: 1px solid rgb(56, 56, 56);
+}
+
+.footer-list li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-list li a {
+    color: #A8A8A8;
+
+}
+
+.footer-inp:focus {
+    outline: none;
+}
+
+.footer-inp {
+    background-color: #FFFFFF0D;
+    border-style: none;
+    margin: 0px 0px 10px 0px;
+    border-radius: 30px;
+    height: 46px;
 }
 
 
 
 
+
+
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+  font-size: 18px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.ticker__wrap {
+  display: inline-block;
+  animation: ticker 20s linear infinite;
+}
+
+.ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+}
+
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* نصف چون دوبار داریم */
+}
 
 
 
