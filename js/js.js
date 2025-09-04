@@ -1,11 +1,18 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2.4,   // تعداد اسلایدهای قابل مشاهده
-  spaceBetween: 20,      // فاصله بین اسلایدها
+  spaceBetween: 15,      // فاصله بین اسلایدها
   loop: true,            // فعال کردن loop بینهایت
   navigation: {          // دکمه‌های بعدی و قبلی
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    576: { slidesPerView: 1.3 },
+    768: { slidesPerView: 2.4 },
+  },
+
+
   pagination: {          // pagination
     el: ".swiper-pagination",
     clickable: true,
@@ -25,9 +32,10 @@ var mySwiper_2 = new Swiper(".mySwiper_2", {
     clickable: true,
   },
   breakpoints: {
-    320: { slidesPerView: 1 },
+    320: { slidesPerView: 1.4 },
     768: { slidesPerView: 2 },
-    1024: { slidesPerView: 4 },
+    992: { slidesPerView: 3 },
+    1200: { slidesPerView: 4 },
   },
 });
 
@@ -39,6 +47,11 @@ const brand_s = new Swiper('.brand_s', {
   autoplay: {
     delay: 0,            // بدون توقف
     disableOnInteraction: false,
+  },
+  breakpoints: {
+    320: { slidesPerView: 3 },
+    768: { slidesPerView: 4 },
+    992: { slidesPerView: 5 },
   },
 });
 
@@ -54,12 +67,22 @@ var blog_s = new Swiper(".blog_s", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    320: { slidesPerView: 1.3 },
+    768: { slidesPerView: 1.9 },
+    992: { slidesPerView: 3 },
+  },
 });
 
 const gallery_s = new Swiper('.gallery_s', {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
+  breakpoints: {
+    320: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    992: { slidesPerView: 5 },
+  },
 });
 
 const topbartext = new Swiper(".topbartext", {
