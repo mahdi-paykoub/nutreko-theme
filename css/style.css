@@ -397,9 +397,7 @@ a {
     overflow: hidden;
 }
 
-.large-txt {
-    font-size: 95px;
-}
+
 
 .large-txt-2 {
     font-size: 76px;
@@ -962,16 +960,30 @@ a {
 
 
 /* media */
-@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 576px) {
+    .large-txt {
+        font-size: 50px;
+    }
+}
 
 @media only screen and (min-width: 768px) {}
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .large-txt {
+        font-size: 70px;
+    }
+}
 
 @media only screen and (min-width: 1200px) {
     .max-width-container {
         max-width: 1200px;
     }
+
+    .large-txt {
+        font-size: 70px;
+    }
+
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -979,6 +991,19 @@ a {
         max-width: 1280px;
     }
 }
+
+@media only screen and (min-width: 1450px) {
+    .max-width-container {
+        max-width: 1450px;
+    }
+
+    .large-txt {
+        font-size: 95px;
+    }
+
+
+}
+
 
 @media only screen and (min-width: 1400px) {
     .max-width-container {
