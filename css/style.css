@@ -1159,6 +1159,19 @@ a {
     font-size: 15px;
 }
 
+/* contact */
+.contac-b-txt {
+    font-size: 70px;
+}
+
+#map {
+    height: 100vh;
+    width: 100%
+}
+
+
+
+
 
 /* media */
 @media only screen and (min-width: 576px) {
