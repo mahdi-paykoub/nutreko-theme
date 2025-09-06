@@ -71,6 +71,10 @@ body {
     font-size: 22px;
 }
 
+.fs23 {
+    font-size: 22px;
+}
+
 .fs25 {
     font-size: 25px;
 }
@@ -87,6 +91,15 @@ body {
     background: #8cff64;
 }
 
+.br-5 {
+    border-radius: 5px;
+}
+
+.text-black {
+    color: #000000;
+}
+
+/* topbar */
 .topbar {
     height: 87px;
 
@@ -176,6 +189,8 @@ a {
     border-radius: 15px;
     transform: translateY(20px) !important;
     transition: transform 0.3s ease, opacity 0.3s ease !important;
+    pointer-events: none;
+
 }
 
 .submenu li a {
@@ -826,14 +841,14 @@ a {
     border-radius: 20px;
     border: 1px solid black;
     bottom: -15px;
-    right: 15px;
+    right: 20px;
 }
 
 
 
 
 .border-top-c {
-        border-top: 1px solid rgb(53, 53, 53);
+    border-top: 1px solid rgb(58, 58, 58);
 }
 
 
@@ -937,6 +952,10 @@ a {
     padding: 0 2rem;
 }
 
+.tag-bo {
+    padding: 6px 19px;
+}
+
 @keyframes ticker {
     0% {
         transform: translateX(0);
@@ -959,8 +978,17 @@ a {
     padding-bottom: 2.5em;
 }
 
+
+
+
+.max-width-container {
+    max-width: 100%;
+}
+
+
 /* media */
 @media only screen and (min-width: 576px) {
+
     .large-txt {
         font-size: 50px;
     }
@@ -983,6 +1011,8 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+
+
     .first-title {
         font-size: 55px;
     }
@@ -1014,6 +1044,11 @@ a {
 }
 
 @media only screen and (min-width: 992px) {
+
+    .max-width-container {
+        max-width: 96%;
+    }
+
     .large-txt {
         font-size: 70px;
     }
@@ -1082,9 +1117,9 @@ a {
 }
 
 @media only screen and (min-width: 1200px) {
-    .max-width-container {
+    /* .max-width-container {
         max-width: 1200px;
-    }
+    } */
 
     .large-txt {
         font-size: 70px;
@@ -1103,16 +1138,67 @@ a {
 
 }
 
+/* blog standard */
+
+/* header */
+.second-header {
+    background-color: #f4f4f4;
+    height: 280px;
+}
+
+.tetx {
+    font-size: 80px;
+}
+
+.blog-txt {
+    font-size: 45px;
+}
+
+.base-inp {
+    background-color: #f4f4f4;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    /* از اول تعریف می‌کنیم */
+    transition: .4s all;
+    color: #5b5b5b;
+}
+
+
+.base-inp:focus {
+    outline: none;
+    border: 1px solid #5B5B5B !important;
+}
+
+
+.base-inp::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+}
+
+.search-ic {
+    top: 15px !important;
+    left: 15px;
+}
+
+
 @media only screen and (min-width: 1280px) {
-    .max-width-container {
+    /* .max-width-container {
         max-width: 1280px;
-    }
+    } */
+}
+
+
+
+
+@media only screen and (min-width: 1400px) {
+    /* .max-width-container {
+        max-width: 1400px;
+    } */
 }
 
 @media only screen and (min-width: 1450px) {
-    .max-width-container {
-        max-width: 1450px;
-    }
+
 
     .large-txt {
         font-size: 95px;
@@ -1121,15 +1207,8 @@ a {
 
 }
 
-
-@media only screen and (min-width: 1400px) {
-    .max-width-container {
-        max-width: 1400px;
-    }
-}
-
 @media only screen and (min-width: 1500px) {
-    .max-width-container {
+    /* .max-width-container {
         max-width: 1460px;
-    }
+    } */
 }
