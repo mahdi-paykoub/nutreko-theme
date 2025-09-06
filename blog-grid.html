@@ -434,16 +434,16 @@
 
 
     <!-- content -->
-    <div class="max-width-container mx-auto mt-5">
+    <div class="max-width-blog-container mx-auto mt-5">
         <div class="swiper firs_blog_grid_post">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="row g-0 border br-20">
-                        <div class="col-6 text-white">
+                        <div class="col-12 col-md-6 text-white">
                             <img src="images/blogs/blog_18-1060x600.jpg"
                                 class="w-100 br-20 object-fit-cover first-blog-grid-img" alt="">
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="w-100 h-100 d-flex justify-content-center align-items-center left-co">
                                 <div>
                                     <div class="w-fit cat-blog-box bg-white fs13 fw-600" style="    padding: 4px 13px;">
@@ -476,11 +476,11 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="row g-0 border br-20">
-                        <div class="col-6 text-white">
+                        <div class="col-12 col-md-6 text-white">
                             <img src="images/blogs/blog_18-1060x600.jpg"
                                 class="w-100 br-20 object-fit-cover first-blog-grid-img" alt="">
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="w-100 h-100 d-flex justify-content-center align-items-center left-co">
                                 <div>
                                     <div class="w-fit cat-blog-box bg-white fs13 fw-600" style="    padding: 4px 13px;">
@@ -511,6 +511,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
 
@@ -528,38 +529,39 @@
 
 
     </div>
-    <div class="max-width-container mx-auto mt-5" x-data="{ tab: 'all' }">
-        <div class="d-flex align-items-center justify-content-center">
 
-            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer" :class="{ 'active': tab === 'all' }"
-                @click="tab = 'all'">
+
+    <div class="max-width-blog-container mx-auto mt-5 pt-4" x-data="{ tab: 'all' }">
+        <div class="d-md-flex align-items-center justify-content-center ">
+            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer text-center mt-3 mt-md-0"
+                :class="{ 'active': tab === 'all' }" @click="tab = 'all'">
                 همه مقالات
             </div>
-            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer" :class="{ 'active': tab === 'nutrition' }"
-                @click="tab = 'nutrition'">
+            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer text-center mt-3 mt-md-0"
+                :class="{ 'active': tab === 'nutrition' }" @click="tab = 'nutrition'">
                 تغذیه
             </div>
-            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer" :class="{ 'active': tab === 'fitness' }"
-                @click="tab = 'fitness'">
+            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer text-center mt-3 mt-md-0"
+                :class="{ 'active': tab === 'fitness' }" @click="tab = 'fitness'">
                 فیتنس
             </div>
-            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer" :class="{ 'active': tab === 'tricks' }"
-                @click="tab = 'tricks'">
+            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer text-center mt-3 mt-md-0"
+                :class="{ 'active': tab === 'tricks' }" @click="tab = 'tricks'">
                 راهکار ها و ترفند‌ها
             </div>
-            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer"
+            <div class="border tab-grid-btn fw-600 me-3 p-2 cursor-pointer text-center mt-3 mt-md-0"
                 :class="{ 'active': tab === 'uncategorized' }" @click="tab = 'uncategorized'">
                 دسته‌بندی نشده
             </div>
         </div>
 
 
-        <div class="row mt-5">
+        <div class="row">
             <!-- محتوای تب‌ها -->
             <div class="">
                 <div x-show="tab === 'all'">
                     <div class="row">
-                        <div class="col-lg-4">
+                        <div class="col-12 col-lg-6 col-xl-4 mt-2">
                             <div class="blog-card mt-5 pt-3">
                                 <div class="position-relative">
                                     <div class="position-absolute cat-blog-box bg-white fs13 fw-600">
@@ -587,6 +589,92 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 col-lg-6 col-xl-4 mt-2">
+                            <div class="blog-card mt-5 pt-3">
+                                <div class="position-relative">
+                                    <div class="position-absolute cat-blog-box bg-white fs13 fw-600">
+                                        عنوان دسته بندی
+                                    </div>
+                                    <img src="images/blogs/blog_18-1060x600.jpg" class="w-100 br-20 object-fit-cover"
+                                        alt="">
+                                </div>
+                                <div class="fw-800 blog-txt-2 mt-4 ps-5">
+                                    عنوان بلاگ :
+                                    آیا مکمل&zwnj;ها می&zwnj;توانند به کاهش وزن کمک کنند؟ علم چه می&zwnj;گوید؟
+                                </div>
+                                <div class="c-sec-2-color lh-2 mt-2">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است،
+                                    زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                                    موجود طراحی
+                                    اساسا مورد استفاده قرار گیرد.
+                                </div>
+                                <div class="read-more-btn mt-3">
+                                    <a href="" class="text-dark fw-700">
+                                        بیشتر بخوانید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 mt-2">
+                            <div class="blog-card mt-5 pt-3">
+                                <div class="position-relative">
+                                    <div class="position-absolute cat-blog-box bg-white fs13 fw-600">
+                                        عنوان دسته بندی
+                                    </div>
+                                    <img src="images/blogs/blog_18-1060x600.jpg" class="w-100 br-20 object-fit-cover"
+                                        alt="">
+                                </div>
+                                <div class="fw-800 blog-txt-2 mt-4 ps-5">
+                                    عنوان بلاگ :
+                                    آیا مکمل&zwnj;ها می&zwnj;توانند به کاهش وزن کمک کنند؟ علم چه می&zwnj;گوید؟
+                                </div>
+                                <div class="c-sec-2-color lh-2 mt-2">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است،
+                                    زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                                    موجود طراحی
+                                    اساسا مورد استفاده قرار گیرد.
+                                </div>
+                                <div class="read-more-btn mt-3">
+                                    <a href="" class="text-dark fw-700">
+                                        بیشتر بخوانید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 mt-2">
+                            <div class="blog-card mt-5 pt-3">
+                                <div class="position-relative">
+                                    <div class="position-absolute cat-blog-box bg-white fs13 fw-600">
+                                        عنوان دسته بندی
+                                    </div>
+                                    <img src="images/blogs/blog_18-1060x600.jpg" class="w-100 br-20 object-fit-cover"
+                                        alt="">
+                                </div>
+                                <div class="fw-800 blog-txt-2 mt-4 ps-5">
+                                    عنوان بلاگ :
+                                    آیا مکمل&zwnj;ها می&zwnj;توانند به کاهش وزن کمک کنند؟ علم چه می&zwnj;گوید؟
+                                </div>
+                                <div class="c-sec-2-color lh-2 mt-2">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+                                    گرافیک
+                                    است،
+                                    زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                                    موجود طراحی
+                                    اساسا مورد استفاده قرار گیرد.
+                                </div>
+                                <div class="read-more-btn mt-3">
+                                    <a href="" class="text-dark fw-700">
+                                        بیشتر بخوانید
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
                 <div x-show="tab === 'nutrition'">🥗 تغذیه</div>
