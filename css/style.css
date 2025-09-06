@@ -956,6 +956,24 @@ a {
     padding: 6px 19px;
 }
 
+.tag-bo:hover {
+    background-color: #8cff64;
+    transition: .5s all;
+
+    border: none !important;
+}
+
+.tag-bo:hover a {
+
+    color: black;
+}
+
+.sticky-top-cu-blog {
+    position: sticky;
+    top: 15px;
+    height: fit-content;
+}
+
 @keyframes ticker {
     0% {
         transform: translateX(0);
@@ -985,6 +1003,53 @@ a {
     max-width: 100%;
 }
 
+.max-width-blog-container {
+    max-width: 92%;
+}
+
+/* blog standard */
+
+/* header */
+.second-header {
+    background-color: #f4f4f4;
+    height: 190px;
+}
+
+
+.second-header-tetx {
+    font-size: 45px;
+}
+
+.blog-txt {
+    font-size: 35px;
+}
+
+.base-inp {
+    background-color: #f4f4f4;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    /* از اول تعریف می‌کنیم */
+    transition: .4s all;
+    color: #5b5b5b;
+}
+
+
+.base-inp:focus {
+    outline: none;
+    border: 1px solid #5B5B5B !important;
+}
+
+
+.base-inp::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+}
+
+.search-ic {
+    top: 15px !important;
+    left: 15px;
+}
 
 /* media */
 @media only screen and (min-width: 576px) {
@@ -1007,6 +1072,10 @@ a {
 
     .first-title {
         font-size: 40px;
+    }
+
+    .max-width-blog-container {
+        max-width: 95%;
     }
 }
 
@@ -1040,6 +1109,23 @@ a {
 
     .border-top-c {
         border: none;
+    }
+
+    .second-header-tetx {
+        font-size: 65px;
+    }
+
+    .second-header {
+        background-color: #f4f4f4;
+        height: 220px;
+    }
+
+    .blog-txt {
+        font-size: 45px;
+    }
+
+    .max-width-blog-container {
+        max-width: 96%;
     }
 }
 
@@ -1114,6 +1200,19 @@ a {
     .customers-txt {
         font-size: 70px;
     }
+
+    .second-header-tetx {
+        font-size: 80px;
+    }
+
+    .second-header {
+        background-color: #f4f4f4;
+        height: 280px;
+    }
+
+    .max-width-blog-container {
+        max-width: 97%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1138,48 +1237,7 @@ a {
 
 }
 
-/* blog standard */
 
-/* header */
-.second-header {
-    background-color: #f4f4f4;
-    height: 280px;
-}
-
-.tetx {
-    font-size: 80px;
-}
-
-.blog-txt {
-    font-size: 45px;
-}
-
-.base-inp {
-    background-color: #f4f4f4;
-    height: 50px;
-    border-radius: 50px;
-    border: 1px solid transparent;
-    /* از اول تعریف می‌کنیم */
-    transition: .4s all;
-    color: #5b5b5b;
-}
-
-
-.base-inp:focus {
-    outline: none;
-    border: 1px solid #5B5B5B !important;
-}
-
-
-.base-inp::placeholder {
-    color: rgb(180, 180, 180);
-    font-size: 15px;
-}
-
-.search-ic {
-    top: 15px !important;
-    left: 15px;
-}
 
 
 @media only screen and (min-width: 1280px) {
