@@ -97,6 +97,10 @@ body {
     border-radius: 5px;
 }
 
+.br-10 {
+    border-radius: 10px;
+}
+
 .text-black {
     color: #000000;
 }
@@ -1084,13 +1088,81 @@ a {
     border-color: transparent !important;
     background-color: #8CFF64;
 }
-.blog-txt-2{
+
+.blog-txt-2 {
     font-size: 25px;
 }
 
 
+/* single-blog */
+.bread-crumb {
+    background-color: #f4f4f4;
+}
+
+.bread-crumb a:hover {
+    color: black;
+}
+
+.main-single-title {
+    font-size: 50px;
+}
+
+.main-sinle-img {
+    height: 600px;
+}
+
+.content-single-editor p {
+    color: #5b5b5b;
+    line-height: 1.8;
+}
+
+.content-single-editor h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.8;
+}
+
+.content-single-editor img {
+    border-radius: 20px;
+}
+
+/* blog comment */
+.commt-head {
+    font-size: 40px;
+}
+
+.comment-box {
+    background-color: #f5f5f5;
+}
+
+.right-arrow-shape {
+    width: 16px;
+    height: 16px;
+    background-color: #f5f5f5;
+    right: -8px;
+    transform: rotate(45deg);
+}
+
+.textarea-inp {
+    background-color: #f4f4f4;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    transition: .4s all;
+    color: #5b5b5b;
+    height: 150px;
+}
+
+.textarea-inp:focus {
+    outline: none;
+    border: 1px solid #5B5B5B !important;
+}
 
 
+.textarea-inp::placeholder {
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+}
 
 
 /* media */
