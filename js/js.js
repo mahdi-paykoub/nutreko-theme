@@ -126,5 +126,56 @@ var firs_blog_grid_post = new Swiper(".firs_blog_grid_post", {
   slidesPerView: 1,       // فقط یکی نشون بده
   spaceBetween: 10,       // فاصله بین اسلایدها
   loop: true,             // لوپ بی‌نهایت
- 
+
+});
+
+// popular products in single produt page
+var pop_post = new Swiper(".pop_post", {
+  direction: "vertical",   // عمودی
+  slidesPerView: 3,        // نمایش ۳ اسلاید همزمان
+  spaceBetween: 10,        // فاصله بین اسلایدها
+  navigation: {
+    nextEl: ".next-btn-sw",
+    prevEl: ".prev-btn-sw",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+  mousewheel: true,        // اسکرول با موس
+});
+// related post in single product
+const rel_posts = new Swiper('.rel_posts', {
+  // جهت افقی پیش‌فرض است (direction: 'horizontal')
+  slidesPerView: 1,
+  spaceBetween: 16,
+  loop: false,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // >= 768px -> 3 slides (تبلت)
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    // >= 1024px -> 4 slides (دسکتاپ)
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 25
+    }
+  },
+  // تجربه لمسی بهتر
+  grabCursor: true,
+  keyboard: { enabled: true, onlyInViewport: true },
+  mousewheel: false
 });

@@ -589,7 +589,7 @@
     </div>
 
 
-    <div class="max-width-container mx-auto text-center">
+    <div class="max-width-blog-container mx-auto text-center">
         <div class="contac-b-txt fw-800">
             <span class="c-sec-color">
                 بازخورد
@@ -632,7 +632,7 @@
 
 
     <!-- map -->
-    <div class="max-width-container mx-auto">
+    <div class="max-width-container mx-auto px-3 px-lg-0">
         <div id="map" class="  br-20 mt-5"></div>
     </div>
 
@@ -997,17 +997,14 @@
 
     // //////////////////////////////////////////////////////////
     const map = new L.Map('map', {
-        key: 'here',  // اینجا کلید API خودت رو بذار
+        key: 'web.4fd891d0fcd8466b823512962a07165f',  // اینجا کلید API خودت رو بذار
         maptype: 'standard-day',
         center: defaultCoords,
         zoom: 13
     });
     // ////////////////////////////////////////////////////////////
 
-    // اضافه کردن مارکر
-    L.marker(defaultCoords).addTo(map)
-        .bindPopup("تهران")
-        .openPopup();
+    
 </script>
 
 </html>
