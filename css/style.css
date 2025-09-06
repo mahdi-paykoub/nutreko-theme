@@ -1161,7 +1161,7 @@ a {
 
 /* contact */
 .contac-b-txt {
-    font-size: 70px;
+    font-size: 45px;
 }
 
 #map {
@@ -1265,6 +1265,11 @@ a {
     .main-sinle-img {
         height: 400px;
     }
+
+    .contac-b-txt {
+        font-size: 55px;
+    }
+
 
 }
 
@@ -1377,6 +1382,11 @@ a {
         right: -8px;
         transform: rotate(45deg);
     }
+
+    .contac-b-txt {
+        font-size: 70px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
