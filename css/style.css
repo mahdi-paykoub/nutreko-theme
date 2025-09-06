@@ -25,7 +25,9 @@ body {
 }
 
 
-
+.w-fit {
+    width: fit-content;
+}
 
 .fs11 {
     font-size: 11px;
@@ -1050,6 +1052,44 @@ a {
     top: 15px !important;
     left: 15px;
 }
+
+/* blog grid */
+.first-blog-grid-img {
+    height: 600px;
+}
+
+.main-first-text {
+    font-size: 44px;
+}
+
+.left-co {
+    padding: 120px;
+}
+
+
+
+
+.tab-grid-btn {
+    padding: 13px 20px !important;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.tab-grid-btn:hover {
+    border-color: black !important;
+}
+
+.tab-grid-btn.active {
+    border-color: transparent !important;
+    background-color: #8CFF64;
+}
+
+
+
+
+
+
 
 /* media */
 @media only screen and (min-width: 576px) {

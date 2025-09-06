@@ -119,3 +119,12 @@ const slider_swiper = new Swiper(".slider_swiper", {
     clickable: true,       // کاربر می‌تواند روی نقطه کلیک کند
   },
 });
+
+
+// blgo grid swiper
+var firs_blog_grid_post = new Swiper(".firs_blog_grid_post", {
+  slidesPerView: 1,       // فقط یکی نشون بده
+  spaceBetween: 10,       // فاصله بین اسلایدها
+  loop: true,             // لوپ بی‌نهایت
+ 
+});
