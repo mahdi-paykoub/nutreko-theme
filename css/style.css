@@ -1232,7 +1232,6 @@ a {
 
 }
 
-.right-image-gallery-pro {}
 
 
 .zoom-container {
@@ -1293,6 +1292,22 @@ a {
     border-color: transparent !important;
     transition: .3s all ease;
 }
+
+/* product dafault 2 */
+.counter-pro {
+    background-color: #f5f5f5;
+    width: 200px;
+    border-radius: 50px;
+    height: 48px;
+}
+
+.box-timer {
+    background-color: #ee440e;
+    min-width: 44px;
+    height: 44px;
+    border-radius: 10px;
+}
+
 
 /* media */
 @media only screen and (min-width: 576px) {
