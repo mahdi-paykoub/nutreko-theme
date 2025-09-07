@@ -1450,6 +1450,17 @@ a {
     border: 1px solid black;
 }
 
+/* 404 page */
+.txt-404 {
+    font-size: 200px;
+    color: #EE440E;
+}
+
+.text-404-sub {
+    font-size: 40px;
+    margin-top: -50px;
+}
+
 /* media */
 @media only screen and (min-width: 576px) {
 
@@ -1580,9 +1591,27 @@ a {
         height: 400px;
     }
 
+    .txt-404 {
+        font-size: 300px;
+        color: #EE440E;
+    }
+
+    .text-404-sub {
+        font-size: 60px;
+        margin-top: -80px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    .text-404-sub {
+        font-size: 80px;
+        margin-top: -120px;
+    }
+
+    .txt-404 {
+        font-size: 400px;
+        color: #EE440E;
+    }
 
     .supp-txt {
         font-size: 70px;
