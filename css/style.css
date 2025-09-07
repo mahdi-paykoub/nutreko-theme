@@ -1701,7 +1701,7 @@ a {
     z-index: 100;
     padding: 20px;
     box-sizing: border-box;
-    border-radius: 0 ;
+    border-radius: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -1723,6 +1723,41 @@ a {
     border: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+/* wishlist */
+
+.wish-table td {
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.wish-table .col-fixed-1 {
+    width: 50px;
+}
+
+.wish-table .col-fixed-2 {
+    width: 150px;
+}
+
+.wish-table .col-flex {
+    min-width: 100px;
+}
+
+.wish-table .table-responsive {
+    overflow-x: auto;
+}
+
+.wish-table .col-last {
+    min-width: 150px;
+}
+
+.wish-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.wish-table tbody tr:nth-child(even) {
+    background-color: #f5f5f5;
 }
 
 
