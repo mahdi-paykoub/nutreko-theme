@@ -192,3 +192,9 @@ var swiper = new Swiper(".teamSwiper", {
   },       // تکرار بینهایت
  
 });
+
+  var cat_swiper = new Swiper(".cat_swiper", {
+        slidesPerView: 8,
+        spaceBetween: 10,
+        loop: true,
+    });

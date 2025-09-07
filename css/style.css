@@ -1502,6 +1502,156 @@ a {
     width: 100%;
 }
 
+/* category */
+.bg-img-hyt {
+    width: 130px;
+    height: 130px;
+    transition: .3s;
+    background-color: #f4f4f4;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.hover-to-this-item:hover .position-absolute {
+    background-color: #8cff64;
+}
+
+
+.ui-slider .ui-slider-range {
+    background-color: #000;
+    height: 2px;
+}
+
+/* خط اصلی اسلایدر (track) */
+#price_slider.ui-slider-horizontal {
+    height: 6px;
+    /* ارتفاع خط */
+    background: #ccc;
+    /* خاکستری برای بخش‌های سلکت نشده */
+    border: none;
+    border-radius: 3px;
+    position: relative;
+}
+
+/* ناحیه انتخاب شده (range) */
+#price_slider .ui-slider-range {
+    background: #444;
+    border-radius: 3px;
+}
+
+/* دسته‌ها (handle) به شکل مربع */
+#price_slider .ui-slider-handle {
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background: #fff;
+    border: 5px solid #000;
+    cursor: pointer;
+}
+
+
+
+/* select box */
+.custom-select-wrapper {
+    position: relative;
+    width: 160px;
+    user-select: none;
+}
+
+/* ظاهر اصلی select */
+.custom-select {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 33px;
+    padding: 7px 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* لیست گزینه‌ها */
+.custom-select-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 2px;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* پنهان به صورت پیش‌فرض */
+    z-index: 10;
+}
+
+.custom-select-options div {
+    padding: 10px 12px;
+    cursor: pointer;
+}
+
+.custom-select-options div:hover {
+    background: #f0f0f0;
+}
+
+/* حالت فعال */
+.custom-select-wrapper.active .custom-select-options {
+    display: block;
+}
+
+/* pagination */
+.pagination {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+    transition: all 0.3s;
+}
+
+.pagination li.active {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.pagination li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* استایل برای آیکون فلش */
+.pagination li.icon {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+
+
 /* media */
 @media only screen and (min-width: 576px) {
 
