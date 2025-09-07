@@ -146,7 +146,7 @@ var pop_post = new Swiper(".pop_post", {
 // related post in single product
 const rel_posts = new Swiper('.rel_posts', {
   // جهت افقی پیش‌فرض است (direction: 'horizontal')
-  slidesPerView: 1,
+  slidesPerView: 1.1,
   spaceBetween: 16,
   loop: false,
   pagination: {
@@ -160,7 +160,7 @@ const rel_posts = new Swiper('.rel_posts', {
   breakpoints: {
     // when window width is >= 480px
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1.3,
       spaceBetween: 20
     },
     // >= 768px -> 3 slides (تبلت)

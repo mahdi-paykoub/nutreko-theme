@@ -1184,7 +1184,7 @@ a {
 
 /* product default */
 .pro-title {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .sixe-box {
@@ -1194,11 +1194,32 @@ a {
 .add-to-card-btn {
     height: 48px;
     border-radius: 50px;
+    border-color: rgb(151, 151, 151) !important;
+    color: rgb(255, 255, 255);
+    background-color: #7f7f7f;
 }
 
-.un-active {
-    background-color: #7f7f7f;
-    color: white;
+.add-to-card-btn.active {
+    background-color: #000000;
+    color: white !important;
+    border-color: black !important;
+}
+
+.flavor-option.active,
+.size-option.active {
+    border-color: black !important;
+}
+
+.buy-now-btn {
+    height: 48px;
+    border-radius: 50px;
+    border-color: rgb(151, 151, 151) !important;
+    color: rgb(146, 146, 146);
+}
+
+.buy-now-btn.active {
+    border-color: rgb(0, 0, 0) !important;
+    color: #000000;
 }
 
 .like-box {
@@ -1236,30 +1257,43 @@ a {
 
 
 .description-of-pro p {
-     color: #5b5b5b;
-     line-height: 2;
+    color: #5b5b5b;
+    line-height: 2;
 }
 
 .description-of-pro li {
     margin-top: 15px;
 }
 
-.message-box{
+.message-box {
     background-color: #3d9cd2;
     border-right: 8px solid #3485b3;
     border-radius: 2px;
 }
 
-.bb-3{
+.bb-3 {
     border-bottom: 3px solid black;
 }
-.wh-s{
+
+.wh-s {
     width: 40px;
     height: 40px;
 }
-.pop_post{
+
+.pop_post {
     height: 400px;
 }
+
+.border-bla {
+    border: 1px solid black !important;
+}
+
+.btn-hove:hover {
+    background-color: #8cff64 !important;
+    border-color: transparent !important;
+    transition: .3s all ease;
+}
+
 /* media */
 @media only screen and (min-width: 576px) {
 
@@ -1362,7 +1396,9 @@ a {
         width: 100%
     }
 
-
+    .pro-title {
+        font-size: 45px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1485,6 +1521,11 @@ a {
         width: 100%
     }
 
+
+    .border-end-ci {
+        border-right: 1px solid rgb(230, 230, 230);
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1508,6 +1549,9 @@ a {
         padding: 100px;
     }
 
+    .pro-title {
+        font-size: 50px;
+    }
 
 }
 
