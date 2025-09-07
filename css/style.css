@@ -1308,6 +1308,25 @@ a {
     border-radius: 10px;
 }
 
+/* faq */
+.faq-text {
+    font-size: 55px;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+}
+
+.accordion-button:focus {
+    border-color: transparent !important;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+
 
 /* media */
 @media only screen and (min-width: 576px) {
