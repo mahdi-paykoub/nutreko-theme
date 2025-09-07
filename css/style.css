@@ -1494,9 +1494,14 @@ a {
     color: white;
 }
 
-.texsize{
+.texsize {
     font-size: 45px;
 }
+
+.cat-btn {
+    width: 100%;
+}
+
 /* media */
 @media only screen and (min-width: 576px) {
 
@@ -1526,6 +1531,10 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+    .cat-btn {
+        width: fit-content;
+    }
+
     .count-txt {
         font-size: 70px;
     }
