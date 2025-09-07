@@ -1327,6 +1327,128 @@ a {
     margin-left: 0;
 }
 
+/* about us */
+.about-header {
+    position: relative;
+    background: url(../images/slider/about-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* برای اینکه بوردر رادیوس روی ::before اعمال بشه */
+}
+
+.about-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url(../images/slider/about-bg-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.5);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.about-header .content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.about-txt {
+    font-size: 90px;
+}
+
+.supp-txt {
+    font-size: 70px;
+}
+
+.count-txt {
+    font-size: 90px;
+}
+
+
+.image-vido-wapper {
+    position: relative;
+    background: url(../images/slider/about-bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.image-vido-wapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../images/slider/about-bg-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(.5);
+    border-radius: 20px;
+    z-index: 0;
+    /* پشت متن */
+}
+
+.image-vido-wapper .content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.play-icon-box {
+    width: 70px;
+    height: 70px;
+}
+
+.bc-img-1 {
+    z-index: -1;
+    bottom: -120px;
+}
+
+.bc-img-2 {
+    z-index: -1;
+    right: 0;
+    top: 30%;
+}
+
+.sub-font-s {
+    font-size: 70px;
+}
+
+.empty-font {
+    color: transparent;
+    /* متن داخل خالی بشه */
+    -webkit-text-stroke: 1px #9d9d9d;
+}
+
+.rottxt {
+    transform: rotate(358deg)
+}
+
+.cnuetya {
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.follow-us-ins {
+    padding: 13px 51px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
 
 /* media */
 @media only screen and (min-width: 576px) {

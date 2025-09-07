@@ -179,3 +179,18 @@ const rel_posts = new Swiper('.rel_posts', {
   keyboard: { enabled: true, onlyInViewport: true },
   mousewheel: false
 });
+
+// team swiper
+var swiper = new Swiper(".teamSwiper", {
+  slidesPerView: 4,      // نمایش ۴ اسلاید
+  spaceBetween: 20,      // فاصله بین اسلایدها
+  loop: true,            // تکرار بینهایت
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
