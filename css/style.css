@@ -1652,6 +1652,81 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* دکمه باز کردن */
+
+
+/* overlay پشت منو */
+.mycanvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 99;
+    min-height: fit-content;
+    overflow: scroll;
+}
+
+/* پنل offcanvas */
+.mycanvas-panel {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    z-index: 100;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 ;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* وقتی فعال شد */
+.mycanvas-panel.show {
+    left: 0;
+}
+
+.mycanvas-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* دکمه بستن */
+.mycanvas-close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
 /* media */
 @media only screen and (min-width: 576px) {
 

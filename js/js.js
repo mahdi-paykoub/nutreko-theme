@@ -182,19 +182,25 @@ const rel_posts = new Swiper('.rel_posts', {
 
 // team swiper
 var swiper = new Swiper(".teamSwiper", {
-  slidesPerView: 4,      // نمایش ۴ اسلاید
-  spaceBetween: 20,      // فاصله بین اسلایدها
+  slidesPerView: 4,
+  spaceBetween: 20,
   loop: true,
   breakpoints: {
     320: { slidesPerView: 1.5 },
     768: { slidesPerView: 3 },
     992: { slidesPerView: 4 },
-  },       // تکرار بینهایت
- 
+  },
+
 });
 
-  var cat_swiper = new Swiper(".cat_swiper", {
-        slidesPerView: 8,
-        spaceBetween: 10,
-        loop: true,
-    });
+var cat_swiper = new Swiper(".cat_swiper", {
+  slidesPerView: 8,
+  loop: true,
+  breakpoints: {
+    320: { slidesPerView: 3 ,  spaceBetween: 90},
+    768: { slidesPerView: 5 ,  spaceBetween: 10},
+    992: { slidesPerView: 6 ,  spaceBetween: 10},
+    1100: { slidesPerView: 7 ,  spaceBetween: 10},
+    1200: { slidesPerView: 8 ,  spaceBetween: 10},
+  },
+});
