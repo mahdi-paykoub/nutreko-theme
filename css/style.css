@@ -1335,7 +1335,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 350px;
     border-radius: 20px;
     overflow: hidden;
     /* برای اینکه بوردر رادیوس روی ::before اعمال بشه */
@@ -1362,15 +1362,15 @@ a {
 }
 
 .about-txt {
-    font-size: 90px;
+    font-size: 50px;
 }
 
 .supp-txt {
-    font-size: 70px;
+    font-size: 40px;
 }
 
 .count-txt {
-    font-size: 90px;
+    font-size: 70px;
 }
 
 
@@ -1381,7 +1381,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 350px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -1479,7 +1479,17 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+    .count-txt {
+        font-size: 70px;
+    }
 
+    .supp-txt {
+        font-size: 60px;
+    }
+
+    .about-txt {
+        font-size: 70px;
+    }
 
     .first-title {
         font-size: 55px;
@@ -1559,9 +1569,32 @@ a {
     .faq-text {
         font-size: 40px;
     }
+
+    .about-header {
+
+        height: 400px;
+
+    }
+
+    .image-vido-wapper {
+        height: 400px;
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
+
+    .supp-txt {
+        font-size: 70px;
+    }
+
+    .about-txt {
+        font-size: 90px;
+    }
+
+    .about-header {
+        height: 600px;
+    }
 
     .max-width-container {
         max-width: 96%;
@@ -1688,6 +1721,10 @@ a {
 
     .faq-text {
         font-size: 55px;
+    }
+
+    .image-vido-wapper {
+        height: 600px;
     }
 }
 
