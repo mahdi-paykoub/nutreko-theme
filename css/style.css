@@ -1461,6 +1461,42 @@ a {
     margin-top: -50px;
 }
 
+/* cart */
+.table>:not(:last-child)>:last-child>* {
+    border: none !important;
+}
+
+.cart-table-body th {
+    padding: 60px !important;
+}
+
+.quantity-box {
+    background-color: #f5f5f5;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.card-c-left {
+    border: 6px solid #E9E9E9;
+}
+
+.checkout-btn {
+    border: 1px solid #e2e2e2;
+    border-radius: 40px;
+    padding: 11px;
+    background: transparent;
+    transition: .3s;
+}
+
+.checkout-btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+.texsize{
+    font-size: 45px;
+}
 /* media */
 @media only screen and (min-width: 576px) {
 
