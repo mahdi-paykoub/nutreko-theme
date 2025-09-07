@@ -1310,7 +1310,7 @@ a {
 
 /* faq */
 .faq-text {
-    font-size: 55px;
+    font-size: 35px;
 }
 
 .accordion-button {
@@ -1432,6 +1432,10 @@ a {
 
     .pro-title {
         font-size: 45px;
+    }
+
+    .faq-text {
+        font-size: 40px;
     }
 }
 
@@ -1560,6 +1564,9 @@ a {
         border-right: 1px solid rgb(230, 230, 230);
     }
 
+    .faq-text {
+        font-size: 55px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
