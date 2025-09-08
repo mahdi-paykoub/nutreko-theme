@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/fontYekanBakh.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 
 <body>
@@ -311,7 +311,7 @@
                 <div class="border-start ps-3 d-flex align-items-center">
                     <input type="text" class="menu-search-inp border-0 fs14 px-4"
                         placeholder="جستجو تو از اینجا شروع کن...">
-                    <svg class="" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                    <svg class="text-hover-green" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="11" cy="11" r="8"></circle>
@@ -319,21 +319,21 @@
                     </svg>
                 </div>
 
-                <svg class="me-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
-                    height="26" width="26" xmlns="http://www.w3.org/2000/svg">
+                <svg class="me-3 text-hover-green" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 256 256" height="26" width="26" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z">
                     </path>
                 </svg>
-                <svg class="me-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                    height="26" width="26" xmlns="http://www.w3.org/2000/svg">
+                <svg class="me-3 text-hover-green" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 512 512" height="26" width="26" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M349.6 64c-36.4 0-70.7 16.7-93.6 43.9C233.1 80.7 198.8 64 162.4 64 97.9 64 48 114.2 48 179.1c0 79.5 70.7 143.3 177.8 241.7L256 448l30.2-27.2C393.3 322.4 464 258.6 464 179.1 464 114.2 414.1 64 349.6 64zm-80.8 329.3l-4.2 3.9-8.6 7.8-8.6-7.8-4.2-3.9c-50.4-46.3-94-86.3-122.7-122-28-34.7-40.4-63.1-40.4-92.2 0-22.9 8.4-43.9 23.7-59.3 15.2-15.4 36-23.8 58.6-23.8 26.1 0 52 12.2 69.1 32.5l24.5 29.1 24.5-29.1c17.1-20.4 43-32.5 69.1-32.5 22.6 0 43.4 8.4 58.7 23.8 15.3 15.4 23.7 36.5 23.7 59.3 0 29-12.5 57.5-40.4 92.2-28.8 35.7-72.3 75.7-122.8 122z">
                     </path>
                 </svg>
 
 
-                <div class="shop-circle rounded-circle bg-green me-3">
+                <div class="shop-circle rounded-circle bg-green me-3 cursor-pointer oc-btn openCanvas">
                     <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -353,11 +353,11 @@
                     <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
                 </svg>
             </div>
-            <div class="logo-box p-2">
-                <img src="images/logo.svg" width="" alt="">
+            <div class="logo-box">
+                <img src="images/logo.svg" width="130" height="" class="mobile-logo" alt="">
             </div>
             <div>
-                <div class="shop-circle rounded-circle bg-green">
+                <div class="shop-circle rounded-circle bg-green cursor-pointer oc-btn openCanvas">
                     <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -412,6 +412,109 @@
             </div>
         </div>
 
+
+
+
+
+        <!-- here ////////////////////////////////////// -->
+
+        <!-- بک‌دراپ -->
+        <div class="oc-backdrop" id="ocBackdrop"></div>
+
+        <!-- پنل -->
+        <aside class="oc-panel" id="ocPanel" aria-hidden="true">
+            <div class="oc-header d-flex align-items-center justify-content-between p-3">
+                <span class="fw-700 fs23">سبد خرید</span>
+                <button class="oc-close" id="closeCanvas">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30"
+                        width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M368 368 144 144m224 0L144 368"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="oc-body">
+                <div class="d-flex mt-3 border-bottom pb-4">
+                    <a href="">
+                        <img src="images/products/product_18_1.jpg" width="70" height="70" class="br-10" alt="">
+                    </a>
+                    <a href="">
+                        <div>
+                            <div class="fw-600">
+                                عنوان محصول
+                            </div>
+                            <div class="fw-600 fs17 mt-1">
+                                400 تومان
+                            </div>
+                            <div
+                                class="counter-pro d-flex align-items-center ms-2 justify-content-around cart-counter mt-2">
+                                <div class="cursor-pointer fs20">
+                                    -
+                                </div>
+                                <div class="">
+                                    1
+                                </div>
+                                <div class="cursor-pointer fs20">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-flex mt-3">
+                    <a href="">
+                        <img src="images/products/product_18_1.jpg" width="70" height="70" class="br-10" alt="">
+                    </a>
+                    <a href="">
+                        <div>
+                            <div class="fw-600">
+                                عنوان محصول
+                            </div>
+                            <div class="fw-600 fs17 mt-1">
+                                400 تومان
+                            </div>
+                            <div
+                                class="counter-pro d-flex align-items-center ms-2 justify-content-around cart-counter mt-2">
+                                <div class="cursor-pointer fs20">
+                                    -
+                                </div>
+                                <div class="">
+                                    1
+                                </div>
+                                <div class="cursor-pointer fs20">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="oc-footer">
+                <button class="oc-close d-none" id="closeCanvas2">بستن</button>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="fw-700 fs20">
+                        جمع کل
+                    </div>
+                    <div class="fw-700 fs20">
+                        1300
+                        تومان
+                    </div>
+
+                </div>
+                <div class="mt-3">
+                    <button class="w-100 add-to-card-btn border-0 un-active fw-600 active bg-hover-green">
+                        مشاهد سبد خرید
+                    </button>
+                    <button class="mt-3 w-100 cat-btn bg-hover-green bg-hover-green">
+                        تسویه حساب
+                    </button>
+                </div>
+
+            </div>
+        </aside>
+        <!-- here ////////////////////////////////////// -->
+
     </header>
 
     <!-- slider -->
@@ -447,8 +550,14 @@
                                 </div>
 
                                 <div class="mt-4">
-                                    <button class="border-0 fs17 bg-white shop-btn fw-600">
+                                    <button class="border-0 fs17 bg-white shop-btn fw-600 hover-btn">
                                         شروع خرید
+                                        <svg class="me-2 display-none" stroke="currentColor" fill="currentColor"
+                                            stroke-width="0" viewBox="0 0 24 24" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                                        </svg>
                                     </button>
                                 </div>
                             </div>
@@ -485,8 +594,14 @@
                                 </div>
 
                                 <div class="mt-4">
-                                    <button class="border-0 fs17 bg-white shop-btn fw-600">
+                                    <button class="border-0 fs17 bg-white shop-btn fw-600 hover-btn">
                                         شروع خرید
+                                        <svg class="me-2 display-none" stroke="currentColor" fill="currentColor"
+                                            stroke-width="0" viewBox="0 0 24 24" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                                        </svg>
                                     </button>
                                 </div>
                             </div>
@@ -527,8 +642,14 @@
                                 </div>
 
                                 <div class="mt-4">
-                                    <button class="border-0 fs17 bg-white shop-btn fw-600">
+                                    <button class="border-0 fs17 bg-white shop-btn fw-600 hover-btn">
                                         شروع خرید
+                                        <svg class="me-2 display-none" stroke="currentColor" fill="currentColor"
+                                            stroke-width="0" viewBox="0 0 24 24" height="18" width="18"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                            <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                                        </svg>
                                     </button>
                                 </div>
                             </div>
@@ -573,7 +694,15 @@
                             </div>
                         </div>
                         <div class="mt-auto pe-4">
-                            <button class="banner-btn bg-transparent text-white fw-600 shop-btn">خرید کالا</button>
+                            <button class="banner-btn bg-transparent text-white fw-600 shop-btn hover-btn">خرید
+                                کالا
+                                <svg class="me-2 display-none" stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 24 24" height="18" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                    <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
@@ -603,7 +732,15 @@
                             </div>
                         </div>
                         <div class="mt-auto pe-4">
-                            <button class="banner-btn bg-transparent text-white fw-600 shop-btn">خرید کالا</button>
+                            <button class="banner-btn bg-transparent text-white fw-600 shop-btn hover-btn">خرید
+                                کالا
+                                <svg class="me-2 display-none" stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 24 24" height="18" width="18"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                    <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                                </svg>
+                            </button>
                         </div>
                     </div>
 
@@ -641,7 +778,13 @@
                 <div class="fs14 menu-search-inp text-center mt-1">
                     ریکاوری عضلات خود را تقویت کنید.
                 </div>
-                <button class="mt-3 w-100 cat-btn">خرید کنید</button>
+                <button class="mt-3 w-100 cat-btn bg-hover-green hover-btn">خرید کنید
+                    <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
             </div>
             <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
                 <div class="ps-3">
@@ -657,7 +800,13 @@
                 <div class="fs14 menu-search-inp text-center mt-1">
                     ریکاوری عضلات خود را تقویت کنید.
                 </div>
-                <button class="mt-3 w-100 cat-btn">خرید کنید</button>
+                <button class="mt-3 w-100 cat-btn bg-hover-green  hover-btn">خرید کنید
+                    <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
             </div>
             <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
                 <div class="ps-3">
@@ -673,7 +822,13 @@
                 <div class="fs14 menu-search-inp text-center mt-1">
                     ریکاوری عضلات خود را تقویت کنید.
                 </div>
-                <button class="mt-3 w-100 cat-btn">خرید کنید</button>
+                <button class="mt-3 w-100 cat-btn bg-hover-green hover-btn">خرید کنید
+                    <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
             </div>
             <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
                 <div class="ps-3">
@@ -689,7 +844,13 @@
                 <div class="fs14 menu-search-inp text-center mt-1">
                     ریکاوری عضلات خود را تقویت کنید.
                 </div>
-                <button class="mt-3 w-100 cat-btn">خرید کنید</button>
+                <button class="mt-3 w-100 cat-btn bg-hover-green hover-btn">خرید کنید
+                    <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
             </div>
             <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
                 <div class="ps-3">
@@ -705,7 +866,13 @@
                 <div class="fs14 menu-search-inp text-center mt-1">
                     ریکاوری عضلات خود را تقویت کنید.
                 </div>
-                <button class="mt-3 w-100 cat-btn">خرید کنید</button>
+                <button class="mt-3 w-100 cat-btn bg-hover-green hover-btn">خرید کنید
+                    <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
             </div>
             <div class="col-6 col-md-4 col-lg-2 mt-4 mt-lg-0">
                 <div class="ps-3">
@@ -721,7 +888,13 @@
                 <div class="fs14 menu-search-inp text-center mt-1">
                     ریکاوری عضلات خود را تقویت کنید.
                 </div>
-                <button class="mt-3 w-100 cat-btn">خرید کنید</button>
+                <button class="mt-3 w-100 cat-btn bg-hover-green hover-btn">خرید کنید
+                    <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                        viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" d="M0 0h24v24H0V0z"></path>
+                        <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                    </svg>
+                </button>
             </div>
 
         </div>
@@ -751,8 +924,13 @@
                             </span>
                         </div>
 
-                        <button class="border-0 w-100 fs17 bg-white shop-btn fw-600 mt-auto">
+                        <button class="border-0 w-100 fs17 bg-white shop-btn fw-600 mt-auto hover-btn">
                             برسی <span class="d-lg-none d-xl-inline">محصولات</span>
+                            <svg class="me-2 display-none" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -1042,8 +1220,14 @@
                             </span>
                         </div>
 
-                        <button class="border-0 w-100 fs17 bg-white shop-btn fw-600 mt-auto">
+                        <button class="border-0 w-100 fs17 bg-white shop-btn fw-600 mt-auto hover-btn">
                             بررسی <span class="d-lg-none d-xl-inline">محصولات</span>
+
+                            <svg class="me-2 display-none" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -1509,7 +1693,13 @@
                         افرادی مانند شما در دستیابی به اهداف مختلف سلامتی و تناسب اندام کمک کرده‌ایم.
                     </div>
                     <div class="mt-4">
-                        <button class="fs17 bg-white shop-btn fw-600 border bg-transparent">شروع کنید</button>
+                        <button class="fs17 bg-white shop-btn fw-600 border bg-transparent hover-btn">شروع کنید
+                            <svg class="me-2 display-none" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mt-4 mt-lg-0">
@@ -3496,7 +3686,7 @@
     <!-- subtitle large -->
     <div class="container-fluid my-5 py-lg-5 position-relative" dir="ltr">
         <div class="position-absolute cnuetya">
-            <button class="follow-us-ins bg-white">
+            <button class="follow-us-ins bg-white hover-btn">
                 اینستاگرام ما را دنبال کنید
             </button>
         </div>
@@ -3554,7 +3744,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- parts -->
     <div class="max-width-container mx-auto mt-5 pt-5 px-3 px-lg-0">
         <div class="swiper gallery_s">
@@ -3926,7 +4116,7 @@
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 <script src="js/js.js"></script>
@@ -3957,6 +4147,31 @@
             e.preventDefault();
             item.parentElement.classList.toggle('active');
         });
+    });
+</script>
+<!-- cart left menu -->
+<script>
+    const openBtns = document.querySelectorAll('.openCanvas'); // همه دکمه‌ها
+    const btnClose = document.getElementById('closeCanvas');
+    const btnClose2 = document.getElementById('closeCanvas2');
+    const panel = document.getElementById('ocPanel');
+    const backdrop = document.getElementById('ocBackdrop');
+
+    function openPanel() {
+        panel.classList.add('active');
+        backdrop.classList.add('active');
+    }
+    function closePanel() {
+        panel.classList.remove('active');
+        backdrop.classList.remove('active');
+    }
+
+    openBtns.forEach(btn => btn.addEventListener('click', openPanel));
+    btnClose.addEventListener('click', closePanel);
+    btnClose2.addEventListener('click', closePanel);
+    backdrop.addEventListener('click', closePanel);
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closePanel();
     });
 </script>
 

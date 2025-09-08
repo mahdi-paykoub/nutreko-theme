@@ -4,6 +4,9 @@ body {
 
 
 /* global */
+a {
+    color: black !important;
+}
 .fw-100 {
     font-weight: 100;
 }
@@ -99,6 +102,162 @@ body {
 
 .br-10 {
     border-radius: 10px;
+}
+
+.hover-btn:hover svg {
+    display: inline !important;
+    margin-bottom: 2px;
+}
+
+
+
+.hover-btn {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    transition: all .6s ease;
+}
+
+.hover-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: #8cff64;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.hover-btn:hover::before {
+    width: 100%;
+    transform: translateX(-50%) scaleX(1);
+}
+
+.hover-btn:hover {
+    color: black !important;
+    border-color: #8cff64 !important;
+    transform: scaleX(1.05);
+
+}
+
+
+
+
+
+
+/* cart left menu */
+/* بک‌دراپ */
+.oc-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--oc-transition);
+    z-index: 1040;
+}
+
+.oc-backdrop.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* پنل */
+.oc-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform .4s ease;
+    z-index: 1041;
+    display: flex;
+    flex-direction: column;
+}
+
+.oc-panel.active {
+    transform: translateX(0);
+}
+
+.oc-header,
+.oc-footer {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.oc-footer {
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}
+
+.oc-body {
+    padding: 12px;
+    flex: 1;
+    overflow: auto;
+}
+
+.oc-close {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-hover-green:hover {
+    background-color: #8cff64 !important;
+    cursor: pointer;
+    transition: .3s;
+    border-color: transparent !important;
+    color: black !important;
+}
+
+.dsiplay-none {
+    display: none;
+}
+
+.bg-hover-green svg {
+    display: block;
+}
+
+.text-hover-green:hover {
+    transition: .2s;
+    color: #8cff64 !important;
+    cursor: pointer;
 }
 
 .border-end,
@@ -382,21 +541,21 @@ a {
 }
 
 .slider-1 {
-    height: 780px;
+    height: 500px;
     background: url(../images/slider/download\ \(1\).png);
     width: 100%;
     background-size: cover;
 }
 
 .slider-2 {
-    height: 780px;
+    height: 500px;
     background: url(../images/slider/download\ \(2\).png);
     width: 100%;
     background-size: cover;
 }
 
 .slider-3 {
-    height: 780px;
+    height: 500px;
     background: url(../images/slider/download\ \(2\).png);
     width: 100%;
     background-size: cover;
@@ -430,7 +589,9 @@ a {
     overflow: hidden;
 }
 
-
+.display-none {
+    display: none;
+}
 
 .large-txt-2 {
     font-size: 30px;
@@ -441,8 +602,8 @@ a {
 }
 
 .shop-btn {
-    padding: 12px 90px;
-    ;
+    width: 250px;
+    height: 50px;
     border-radius: 31px;
 }
 
@@ -1462,6 +1623,11 @@ a {
 }
 
 /* cart */
+.cart-counter {
+    width: 135px;
+    height: 39px;
+}
+
 .table>:not(:last-child)>:last-child>* {
     border: none !important;
 }
@@ -1737,7 +1903,7 @@ a {
 }
 
 .wish-table .col-fixed-2 {
-    width: 150px;
+    width: 120px;
 }
 
 .wish-table .col-flex {
@@ -1765,6 +1931,21 @@ a {
 /* media */
 @media only screen and (min-width: 576px) {
 
+    .slider-1 {
+        height: 700px;
+
+    }
+
+    .slider-2 {
+        height: 700px;
+
+    }
+
+    .slider-3 {
+        height: 700px;
+
+    }
+
     .large-txt {
         font-size: 50px;
     }
@@ -1791,6 +1972,21 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+    .slider-1 {
+        height: 780px;
+
+    }
+
+    .slider-2 {
+        height: 780px;
+
+    }
+
+    .slider-3 {
+        height: 780px;
+
+    }
+
     .cat-btn {
         width: fit-content;
     }
@@ -1908,6 +2104,8 @@ a {
 }
 
 @media only screen and (min-width: 992px) {
+
+
     .text-404-sub {
         font-size: 80px;
         margin-top: -120px;
@@ -2063,9 +2261,7 @@ a {
 }
 
 @media only screen and (min-width: 1200px) {
-    /* .max-width-container {
-        max-width: 1200px;
-    } */
+
 
     .large-txt {
         font-size: 70px;
@@ -2096,6 +2292,7 @@ a {
     /* .max-width-container {
         max-width: 1280px;
     } */
+
 }
 
 
