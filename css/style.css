@@ -1955,10 +1955,28 @@ a {
 }
 
 .compare-table td {
-     padding: 1.5rem !important; 
+    padding: 1.5rem !important;
 }
+
 .compare-table th {
-    padding: 1rem !important; 
+    padding: 1rem !important;
+}
+
+.z-1000 {
+    z-index: 1000;
+}
+
+.show-modal-pro-img {
+    width: 50%;
+}
+
+.show-modal-pro-title {
+    font-size: 30px;
+}
+
+.show-modal-product {
+    max-width: 1100px;
+    width: 98%;
 }
 
 /* media */
@@ -2138,6 +2156,9 @@ a {
 
 @media only screen and (min-width: 992px) {
 
+    .show-modal-pro-img {
+        width: 100%;
+    }
 
     .text-404-sub {
         font-size: 80px;
