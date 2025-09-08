@@ -2014,15 +2014,23 @@ a {
     padding: 7px;
     font-size: 18px;
 }
-.orders-table th{
+
+.orders-table th {
     background-color: #f2f2f2;
     padding: 25px 12px !important;
     font-size: 18px !important;
 }
-.orders-table td{
+
+.orders-table td {
     padding: 25px 12px !important;
     font-size: 17px !important;
 }
+
+.mobile-bottom-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 /* media */
 @media only screen and (min-width: 576px) {
 
