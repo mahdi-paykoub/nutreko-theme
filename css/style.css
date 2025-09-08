@@ -274,7 +274,7 @@ a {
 
 .tx-gg div,
 .tx-gg svg {
-    color: #8cff64;
+    color: #8cff64 !important;
 }
 
 .border-end,
@@ -2007,6 +2007,22 @@ a {
     width: 98%;
 }
 
+.top-change-txt {
+    position: absolute;
+    top: -20px;
+    background: white;
+    padding: 7px;
+    font-size: 18px;
+}
+.orders-table th{
+    background-color: #f2f2f2;
+    padding: 25px 12px !important;
+    font-size: 18px !important;
+}
+.orders-table td{
+    padding: 25px 12px !important;
+    font-size: 17px !important;
+}
 /* media */
 @media only screen and (min-width: 576px) {
 
