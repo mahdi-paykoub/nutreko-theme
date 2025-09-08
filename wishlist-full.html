@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="">
+      <header class="">
         <!-- topbar -->
         <div class="topbar bg-green">
             <div class="d-flex p-3 justify-content-center justify-content-md-between align-items-center">
@@ -125,13 +125,13 @@
             </div>
         </div>
         <!-- menu -->
-        <div class="menu align-items-center justify-content-between bg-white px-4 d-none d-xl-flex">
+        <div class="menu align-items-center justify-content-between bg-white px-4 d-none d-xl-flex position-relative">
             <div class="logo-box">
                 <img src="images/logo.svg" width="" alt="">
             </div>
-            <div class="d-flex align-items-center position-relative">
+            <div class="d-flex align-items-center">
                 <ul class="main-menu p-0 m-0 d-flex list-unstyled">
-                    <li class="menu-item">
+                    <li class="menu-item static">
                         <a href="#">
                             خانه
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -141,7 +141,6 @@
                             </svg>
                         </a>
                         <!-- Full-width mega menu -->
-
                         <div class="mega-menu full-width px-5 py-4">
                             <div class="row p-4">
                                 <div class="col">
@@ -176,7 +175,9 @@
                                 </div>
                             </div>
                         </div>
+
                     </li>
+
                     <li class="menu-item">
                         <a href="#">
                             فروشگاه‌
@@ -209,7 +210,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu-item">
+                    <li class="menu-item static">
                         <a href="#">
                             صفحات
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
@@ -309,7 +310,7 @@
                 <div class="border-start ps-3 d-flex align-items-center">
                     <input type="text" class="menu-search-inp border-0 fs14 px-4"
                         placeholder="جستجو تو از اینجا شروع کن...">
-                    <svg class="" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                    <svg class="text-hover-green" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                         stroke-linecap="round" stroke-linejoin="round" height="20" width="20"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="11" cy="11" r="8"></circle>
@@ -317,21 +318,21 @@
                     </svg>
                 </div>
 
-                <svg class="me-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
-                    height="26" width="26" xmlns="http://www.w3.org/2000/svg">
+                <svg class="me-3 text-hover-green" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 256 256" height="26" width="26" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z">
                     </path>
                 </svg>
-                <svg class="me-3" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
-                    height="26" width="26" xmlns="http://www.w3.org/2000/svg">
+                <svg class="me-3 text-hover-green" stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 512 512" height="26" width="26" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M349.6 64c-36.4 0-70.7 16.7-93.6 43.9C233.1 80.7 198.8 64 162.4 64 97.9 64 48 114.2 48 179.1c0 79.5 70.7 143.3 177.8 241.7L256 448l30.2-27.2C393.3 322.4 464 258.6 464 179.1 464 114.2 414.1 64 349.6 64zm-80.8 329.3l-4.2 3.9-8.6 7.8-8.6-7.8-4.2-3.9c-50.4-46.3-94-86.3-122.7-122-28-34.7-40.4-63.1-40.4-92.2 0-22.9 8.4-43.9 23.7-59.3 15.2-15.4 36-23.8 58.6-23.8 26.1 0 52 12.2 69.1 32.5l24.5 29.1 24.5-29.1c17.1-20.4 43-32.5 69.1-32.5 22.6 0 43.4 8.4 58.7 23.8 15.3 15.4 23.7 36.5 23.7 59.3 0 29-12.5 57.5-40.4 92.2-28.8 35.7-72.3 75.7-122.8 122z">
                     </path>
                 </svg>
 
 
-                <div class="shop-circle rounded-circle bg-green me-3">
+                <div class="shop-circle rounded-circle bg-green me-3 cursor-pointer oc-btn openCanvas">
                     <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -346,16 +347,18 @@
         <!-- mobile -->
         <div class="menu align-items-center justify-content-between bg-white px-4 d-xl-none d-flex py-4">
             <div>
-                <svg id="menuBtn" aria-controls="offcanvasRight" stroke="currentColor" fill="currentColor"
-                    stroke-width="0" viewBox="0 0 24 24" height="30" width="30" xmlns="http://www.w3.org/2000/svg">
+                <svg class="cursor-pointer" id="menuBtn" aria-controls="offcanvasRight" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="30" width="30"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
                 </svg>
             </div>
-            <div class="logo-box p-2">
-                <img src="images/logo.svg" width="" alt="">
+            <div class="logo-box">
+                <img src="images/logo.svg" width="130" height="" class="mobile-logo" alt="">
             </div>
+
             <div>
-                <div class="shop-circle rounded-circle bg-green">
+                <div class="shop-circle rounded-circle bg-green cursor-pointer oc-btn openCanvas">
                     <svg stroke="currentColor" fill="none" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"
                         height="25" width="25" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -370,8 +373,8 @@
         <div class="custom-sidebar" id="sidebar">
             <div class="text-start mt-2">
                 <button class="border-0 bg-transparent me-auto" id="closeBtn">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="20"
-                        width="20" xmlns="http://www.w3.org/2000/svg">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30"
+                        width="30" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z">
                         </path>
@@ -382,35 +385,165 @@
             <div class="logo">
                 <img src="images/logo.svg" width="" alt="">
             </div>
-            <div class="menu mt-4">
-                <div class="custom-has-submenu">
-                    <a href="#" class="custom-toggle">منو 1</a>
-                    <div class="custom-submenu">
-                        <a href="#">زیرمنو 1-1</a>
-                        <a href="#">زیرمنو 1-2</a>
-                        <a href="#">زیرمنو 1-3</a>
+
+
+
+
+            <div x-data="{ tab: 'menu' }" dir="rtl">
+                <!-- دکمه‌ها -->
+                <div style="display:flex; gap:8px; margin-bottom:12px;">
+                    <button @click="tab = 'menu'" class="c-sec-color border-0 bg-transparent fw-600 fs17"
+                        :class="tab==='menu' ? 'text-black' : ''">
+                        منو اصلی
+                    </button>
+
+                    <button @click="tab = 'cats'" class="c-sec-color border-0 bg-transparent fw-600 fs17"
+                        :class="tab==='cats' ? 'text-black' : ''">
+                        دسته‌بندی‌ها
+                    </button>
+                </div>
+
+                <!-- محتوا -->
+                <div x-show="tab==='menu'">
+
+                    <div class="menu mt-4">
+                        <div class="custom-has-submenu">
+                            <a href="#" class="custom-toggle">منو 1</a>
+                            <div class="custom-submenu">
+                                <a href="#">زیرمنو 1-1</a>
+                                <a href="#">زیرمنو 1-2</a>
+                                <a href="#">زیرمنو 1-3</a>
+                            </div>
+                        </div>
+                        <div class="custom-has-submenu">
+                            <a href="#" class="custom-toggle">منو 2</a>
+                            <div class="custom-submenu">
+                                <a href="#">زیرمنو 2-1</a>
+                                <a href="#">زیرمنو 2-2</a>
+                            </div>
+                        </div>
+                        <div class="custom-has-submenu">
+                            <a href="#" class="custom-toggle">منو 3</a>
+                            <div class="custom-submenu">
+                                <a href="#">زیرمنو 3-1</a>
+                                <a href="#">زیرمنو 3-2</a>
+                                <a href="#">زیرمنو 3-3</a>
+                            </div>
+                        </div>
+                        <a href="#">منو 4</a>
                     </div>
                 </div>
-                <div class="custom-has-submenu">
-                    <a href="#" class="custom-toggle">منو 2</a>
-                    <div class="custom-submenu">
-                        <a href="#">زیرمنو 2-1</a>
-                        <a href="#">زیرمنو 2-2</a>
+
+                <div x-show="tab==='cats'">
+                    <div class="p-3 text-secondary">
+                        دسته بندی ها طبق ساختار منو اصلی در اینجا قرار گیرد
                     </div>
                 </div>
-                <div class="custom-has-submenu">
-                    <a href="#" class="custom-toggle">منو 3</a>
-                    <div class="custom-submenu">
-                        <a href="#">زیرمنو 3-1</a>
-                        <a href="#">زیرمنو 3-2</a>
-                        <a href="#">زیرمنو 3-3</a>
-                    </div>
-                </div>
-                <a href="#">منو 4</a>
             </div>
         </div>
 
+
+        <!-- here ////////////////////////////////////// -->
+
+        <!-- backdrop -->
+        <div class="oc-backdrop" id="ocBackdrop"></div>
+
+        <!-- panel -->
+        <aside class="oc-panel" id="ocPanel" aria-hidden="true">
+            <div class="oc-header d-flex align-items-center justify-content-between p-3">
+                <span class="fw-700 fs23">سبد خرید</span>
+                <button class="oc-close" id="closeCanvas">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30"
+                        width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+                            d="M368 368 144 144m224 0L144 368"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="oc-body">
+                <div class="d-flex mt-3 border-bottom pb-4">
+                    <a href="">
+                        <img src="images/products/product_18_1.jpg" width="70" height="70" class="br-10" alt="">
+                    </a>
+                    <a href="">
+                        <div>
+                            <div class="fw-600">
+                                عنوان محصول
+                            </div>
+                            <div class="fw-600 fs17 mt-1">
+                                400 تومان
+                            </div>
+                            <div
+                                class="counter-pro d-flex align-items-center ms-2 justify-content-around cart-counter mt-2">
+                                <div class="cursor-pointer fs20">
+                                    -
+                                </div>
+                                <div class="">
+                                    1
+                                </div>
+                                <div class="cursor-pointer fs20">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="d-flex mt-3">
+                    <a href="">
+                        <img src="images/products/product_18_1.jpg" width="70" height="70" class="br-10" alt="">
+                    </a>
+                    <a href="">
+                        <div>
+                            <div class="fw-600">
+                                عنوان محصول
+                            </div>
+                            <div class="fw-600 fs17 mt-1">
+                                400 تومان
+                            </div>
+                            <div
+                                class="counter-pro d-flex align-items-center ms-2 justify-content-around cart-counter mt-2">
+                                <div class="cursor-pointer fs20">
+                                    -
+                                </div>
+                                <div class="">
+                                    1
+                                </div>
+                                <div class="cursor-pointer fs20">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="oc-footer">
+                <button class="oc-close d-none" id="closeCanvas2">بستن</button>
+
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="fw-700 fs20">
+                        جمع کل
+                    </div>
+                    <div class="fw-700 fs20">
+                        1300
+                        تومان
+                    </div>
+
+                </div>
+                <div class="mt-3">
+                    <button class="w-100 add-to-card-btn border-0 un-active fw-600 active bg-hover-green">
+                        مشاهد سبد خرید
+                    </button>
+                    <button class="mt-3 w-100 cat-btn bg-hover-green bg-hover-green">
+                        تسویه حساب
+                    </button>
+                </div>
+
+            </div>
+        </aside>
+        <!-- here ////////////////////////////////////// -->
+
     </header>
+
     <div class="px-3 px-lg-0">
         <div class="second-header max-width-container mx-auto br-20 d-flex justify-content-center align-items-center">
             <div>
@@ -461,7 +594,7 @@
                             </div>
                         </td>
                         <td class="col-flex col-last">
-                            <button class="w-100 cat-btn">خرید کنید</button>
+                            <button class="w-100 cat-btn bg-hover-green">خرید کنید</button>
                         </td>
                     </tr>
                     <tr>
@@ -488,7 +621,7 @@
                             </div>
                         </td>
                         <td class="col-flex col-last">
-                            <button class="w-100 cat-btn">خرید کنید</button>
+                            <button class="w-100 cat-btn bg-hover-green">خرید کنید</button>
                         </td>
                     </tr>
 
@@ -507,19 +640,23 @@
             <button class="px-5 me-3 border br-20 py-2 bg-transparent">کپی لینک</button>
         </div>
     </div>
-    <!-- footer -->
+      <!-- footer -->
     <div class="pt-5"></div>
-    <footer class="footer py-5 mt-5 px-3">
-        <div class="max-width-container mx-auto">
-            <div class="logo-box d-lg-none">
+    <footer class="footer py-5 mt-5 px-3 position-relative">
+        <div class="position-absolute top-0 end-0 bg-white w-100 p-5" style="border-radius: 0 0 40px 40px;">
+
+        </div>
+        <div class="max-width-container mx-auto pt-footer-6">
+            <div class="logo-box d-lg-none text-center text-md-end">
                 <img src="images/logo-w.svg" width="" alt="">
             </div>
-            <div class="d-flex align-items-center justify-content-between pb-5 footer-border-bottom mt-4 mt-lg-0">
+            <div
+                class="d-md-flex text-center align-items-center justify-content-between pb-5 footer-border-bottom mt-4 mt-lg-0">
 
                 <div class="logo-box d-none d-lg-block">
                     <img src="images/logo-w.svg" width="" alt="">
                 </div>
-                <div>
+                <div class="mt-3">
                     <svg class="text-green" stroke="currentColor" fill="currentColor" stroke-width="0"
                         viewBox="0 0 256 256" height="26" width="26" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -528,7 +665,7 @@
                     </svg>
                     <span class="text-white me-1 fw-700">چت آنلاین</span>
                 </div>
-                <div>
+                <div class="mt-3">
 
                     <svg class="text-green" stroke="currentColor" fill="currentColor" stroke-width="0"
                         viewBox="0 0 16 16" height="28" width="28" xmlns="http://www.w3.org/2000/svg">
@@ -539,7 +676,7 @@
                     </svg>
                     <span class="text-white me-1 fw-700">(084) 123 - 456 88</span>
                 </div>
-                <div>
+                <div class="mt-3">
                     <svg class="text-green" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
                         aria-hidden="true" height="28" width="28" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -548,26 +685,29 @@
                     </svg>
                     <span class="text-white me-1 fw-700">contact@example.com</span>
                 </div>
-                <div>
+                <div class="mt-3">
                     <a href="">
-                        <svg class="text-white-50" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            viewBox="0 0 448 512" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="text-white-50 text-hover-green" stroke="currentColor" fill="currentColor"
+                            stroke-width="0" viewBox="0 0 448 512" height="16" width="16"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
                             </path>
                         </svg>
                     </a>
                     <a href="">
-                        <svg class="text-white-50 me-3" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="text-white-50 text-hover-green me-3" stroke="currentColor" fill="currentColor"
+                            stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z">
                             </path>
                         </svg>
                     </a>
                     <a href="">
-                        <svg class="text-white-50 me-3" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            viewBox="0 0 16 16" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="text-white-50 text-hover-green me-3" stroke="currentColor" fill="currentColor"
+                            stroke-width="0" viewBox="0 0 16 16" height="16" width="16"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z">
                             </path>
@@ -575,8 +715,9 @@
                     </a>
 
                     <a href="">
-                        <svg class="text-white-50 me-3" stroke="currentColor" fill="currentColor" stroke-width="0"
-                            viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="text-white-50 text-hover-green me-3" stroke="currentColor" fill="currentColor"
+                            stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z">
                             </path>
@@ -724,8 +865,13 @@
                     <div>
                         <input type="text" class="footer-inp w-100 mt-4 px-3 text-white"
                             placeholder="ایمیل وارد نمایید...">
-                        <button class="border-0 fs17 w-100 mt-1 bg-white shop-btn fw-600">
+                        <button class="border-0 fs17 w-100 mt-1 bg-white shop-btn fw-600 hover-btn">
                             عضو شوید
+                            <svg class="d-none me-1" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 24 24" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+                            </svg>
                         </button>
                     </div>
                 </div>
@@ -737,16 +883,18 @@
         <div class="max-width-container mx-auto text-white-50">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="fs15">
-                    ©حق کپی رایت محفوظ است
+                    حق کپی رایت  © محفوظ است
+                   .
                 </div>
                 <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" viewBox="0 0 42 28" fill="none">
+                    <svg class="text-hover-green" xmlns="http://www.w3.org/2000/svg" width="42" height="28"
+                        viewBox="0 0 42 28" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M3.5 0H38.5C40.433 0 42 1.567 42 3.5V24.5C42 26.433 40.433 28 38.5 28H3.5C1.567 28 0 26.433 0 24.5V3.5C0 1.567 1.567 0 3.5 0ZM10.5784 11.5943L12.2496 18.0606H14.4634L17.8584 9.96681H15.6534L13.4746 15.4706L12.5996 10.7893C12.5222 10.3136 12.1104 9.96484 11.6284 9.96681H8.06715L8.01465 10.2031C8.72894 10.3428 9.42276 10.5721 10.0796 10.8856C10.3594 11.0171 10.549 11.2865 10.5784 11.5943ZM17.0186 18.0605L18.7686 9.9668H20.8686L19.1186 18.0605H17.0186ZM20.5537 17.7537C21.2953 18.0432 22.0852 18.1888 22.8812 18.1825H22.9075C25.1037 18.1825 26.5475 17.0975 26.5562 15.4175C26.5615 14.1373 25.5064 13.5807 24.6608 13.1345C24.0962 12.8367 23.625 12.5881 23.625 12.2063C23.625 11.9175 23.8962 11.6112 24.5 11.5325C25.1962 11.491 25.8909 11.636 26.5125 11.9525L26.88 10.2025C26.2531 9.96744 25.5894 9.84596 24.92 9.84375C22.89 9.84375 21.42 10.9462 21.42 12.5212C21.4025 13.685 22.435 14.315 23.2487 14.7175C24.0625 15.12 24.3337 15.3737 24.3337 15.7237C24.3337 16.2662 23.6862 16.52 23.0825 16.52C22.3326 16.5353 21.5913 16.3575 20.93 16.0037L20.5537 17.7537ZM31.9899 18.0605L31.7361 16.853H29.0761L28.6474 18.0605H26.4424L29.5836 10.5618C29.7285 10.205 30.0736 9.97032 30.4586 9.9668H32.2086L33.9061 18.0605H31.9899ZM31.4043 15.1905H29.6543L30.7655 12.1543L31.4043 15.1905Z"
                             fill="#545454"></path>
                     </svg>
-                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="43" height="28" viewBox="0 0 43 28"
-                        fill="none">
+                    <svg class="me-1 text-hover-green" xmlns="http://www.w3.org/2000/svg" width="43" height="28"
+                        viewBox="0 0 43 28" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M3.875 0H38.875C40.808 0 42.375 1.567 42.375 3.5V24.5C42.375 26.433 40.808 28 38.875 28H3.875C1.942 28 0.375 26.433 0.375 24.5V3.5C0.375 1.567 1.942 0 3.875 0ZM19.8175 22.2777C17.4422 20.1815 16.0788 17.1681 16.0725 14.0001C16.0582 10.8278 17.4252 7.80619 19.8175 5.72265C15.912 3.73925 11.1515 4.75555 8.3964 8.16091C5.6413 11.5663 5.6413 16.434 8.3964 19.8394C11.1515 23.2447 15.912 24.2611 19.8175 22.2777ZM21.3745 6.70312C23.6127 8.46329 24.9194 11.1532 24.9194 14.0006C24.9194 16.848 23.6127 19.538 21.3745 21.2981C19.1332 19.5399 17.8242 16.8493 17.8242 14.0006C17.8242 11.152 19.1332 8.46135 21.3745 6.70312ZM22.9325 22.2773C24.2292 22.9331 25.6619 23.2748 27.115 23.2748C30.9495 23.2683 34.3846 20.9029 35.7585 17.3231C37.1324 13.7433 36.1618 9.68704 33.3163 7.11684C30.4708 4.54664 26.3371 3.9924 22.915 5.72225C23.4294 6.15804 23.8985 6.64468 24.315 7.17475C27.9216 11.7821 27.3156 18.4013 22.9325 22.2773Z"
                             fill="#545454"></path>
@@ -759,8 +907,8 @@
                             d="M35.8904 19.6429L36.0042 19.3892H36.0917V19.7479H36.0304V19.4767L35.9342 19.7129H35.8642L35.7592 19.4767V19.7479H35.6892V19.3892H35.7854L35.8904 19.6429ZM35.3223 19.4514V19.3901H35.6285V19.4514H35.4973V19.7489H35.4448V19.4514H35.3223Z"
                             fill="#545454"></path>
                     </svg>
-                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="43" height="28" viewBox="0 0 43 28"
-                        fill="none">
+                    <svg class="me-1 text-hover-green" xmlns="http://www.w3.org/2000/svg" width="43" height="28"
+                        viewBox="0 0 43 28" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M2.9375 7.4375H4.425L6.525 12.3375H5.2125L4.775 11.375H2.5L2.0625 12.425H0.75L2.9375 7.4375ZM3.28711 9.2748L2.84961 10.4123H4.42461L3.98711 9.2748L3.63711 8.4873L3.28711 9.2748Z"
                             fill="#545454"></path>
@@ -811,8 +959,8 @@
                             d="M21.2246 9.53662C21.4871 9.62412 21.7496 9.44912 21.8371 9.09912C21.7496 9.36162 21.4871 9.62412 21.2246 9.53662Z"
                             fill="white"></path>
                     </svg>
-                    <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="43" height="28" viewBox="0 0 43 28"
-                        fill="none">
+                    <svg class="me-1 text-hover-green" xmlns="http://www.w3.org/2000/svg" width="43" height="28"
+                        viewBox="0 0 43 28" fill="none">
                         <path
                             d="M6.51254 13.5095C6.09834 13.8706 5.55496 14.0475 5.00754 13.9995H4.72754V10.2545H5.00754C5.54977 10.1998 6.09142 10.3636 6.51254 10.7095C6.90932 11.0658 7.13264 11.5763 7.12504 12.1095C7.12925 12.642 6.9065 13.1511 6.51254 13.5095Z"
                             fill="#545454"></path>
@@ -824,42 +972,12 @@
             </div>
         </div>
     </footer>
+
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
 <script src="js/js.js"></script>
-
-<script>
-    const btn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
-    const closeBtn = document.getElementById('closeBtn');
-
-    btn.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-        overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
-    });
-
-    overlay.addEventListener('click', () => {
-        sidebar.classList.remove('active');
-        overlay.style.display = 'none';
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.remove('active');
-        overlay.style.display = 'none';
-    });
-
-    document.querySelectorAll('.custom-toggle').forEach(item => {
-        item.addEventListener('click', e => {
-            e.preventDefault();
-            item.parentElement.classList.toggle('active');
-        });
-    });
-</script>
-
 </html>

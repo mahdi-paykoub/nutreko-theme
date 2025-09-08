@@ -3912,7 +3912,6 @@
 
     <!-- footer -->
     <div class="pt-5"></div>
-
     <footer class="footer py-5 mt-5 px-3 position-relative">
         <div class="position-absolute top-0 end-0 bg-white w-100 p-5" style="border-radius: 0 0 40px 40px;">
 
@@ -4154,7 +4153,8 @@
         <div class="max-width-container mx-auto text-white-50">
             <div class="d-flex align-items-center justify-content-between">
                 <div class="fs15">
-                    ©حق کپی رایت محفوظ است
+                    حق کپی رایت  © محفوظ است
+                   .
                 </div>
                 <div>
                     <svg class="text-hover-green" xmlns="http://www.w3.org/2000/svg" width="42" height="28"
@@ -4609,60 +4609,6 @@
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 <script src="js/js.js"></script>
 
-<!-- mobile menu -->
-<script>
-    const btn = document.getElementById('menuBtn');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('overlay');
-    const closeBtn = document.getElementById('closeBtn');
-
-    btn.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-        overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
-    });
-
-    overlay.addEventListener('click', () => {
-        sidebar.classList.remove('active');
-        overlay.style.display = 'none';
-    });
-
-    closeBtn.addEventListener('click', () => {
-        sidebar.classList.remove('active');
-        overlay.style.display = 'none';
-    });
-
-    document.querySelectorAll('.custom-toggle').forEach(item => {
-        item.addEventListener('click', e => {
-            e.preventDefault();
-            item.parentElement.classList.toggle('active');
-        });
-    });
-</script>
-<!-- cart left menu -->
-<script>
-    const openBtns = document.querySelectorAll('.openCanvas'); // همه دکمه‌ها
-    const btnClose = document.getElementById('closeCanvas');
-    const btnClose2 = document.getElementById('closeCanvas2');
-    const panel = document.getElementById('ocPanel');
-    const backdrop = document.getElementById('ocBackdrop');
-
-    function openPanel() {
-        panel.classList.add('active');
-        backdrop.classList.add('active');
-    }
-    function closePanel() {
-        panel.classList.remove('active');
-        backdrop.classList.remove('active');
-    }
-
-    openBtns.forEach(btn => btn.addEventListener('click', openPanel));
-    btnClose.addEventListener('click', closePanel);
-    btnClose2.addEventListener('click', closePanel);
-    backdrop.addEventListener('click', closePanel);
-    document.addEventListener('keydown', e => {
-        if (e.key === 'Escape') closePanel();
-    });
-</script>
 
 </html>
 

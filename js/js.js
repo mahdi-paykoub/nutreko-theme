@@ -197,10 +197,63 @@ var cat_swiper = new Swiper(".cat_swiper", {
   slidesPerView: 8,
   loop: true,
   breakpoints: {
-    320: { slidesPerView: 3 ,  spaceBetween: 90},
-    768: { slidesPerView: 5 ,  spaceBetween: 10},
-    992: { slidesPerView: 6 ,  spaceBetween: 10},
-    1100: { slidesPerView: 7 ,  spaceBetween: 10},
-    1200: { slidesPerView: 8 ,  spaceBetween: 10},
+    320: { slidesPerView: 3, spaceBetween: 90 },
+    768: { slidesPerView: 5, spaceBetween: 10 },
+    992: { slidesPerView: 6, spaceBetween: 10 },
+    1100: { slidesPerView: 7, spaceBetween: 10 },
+    1200: { slidesPerView: 8, spaceBetween: 10 },
   },
+});
+
+// mobile menu
+const btn = document.getElementById('menuBtn');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const closeBtn = document.getElementById('closeBtn');
+
+btn.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+  overlay.style.display = sidebar.classList.contains('active') ? 'block' : 'none';
+});
+
+overlay.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+  overlay.style.display = 'none';
+});
+
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+  overlay.style.display = 'none';
+});
+
+document.querySelectorAll('.custom-toggle').forEach(item => {
+  item.addEventListener('click', e => {
+    e.preventDefault();
+    item.parentElement.classList.toggle('active');
+  });
+});
+
+
+// cart left menu
+const openBtns = document.querySelectorAll('.openCanvas'); // همه دکمه‌ها
+const btnClose = document.getElementById('closeCanvas');
+const btnClose2 = document.getElementById('closeCanvas2');
+const panel = document.getElementById('ocPanel');
+const backdrop = document.getElementById('ocBackdrop');
+
+function openPanel() {
+  panel.classList.add('active');
+  backdrop.classList.add('active');
+}
+function closePanel() {
+  panel.classList.remove('active');
+  backdrop.classList.remove('active');
+}
+
+openBtns.forEach(btn => btn.addEventListener('click', openPanel));
+btnClose.addEventListener('click', closePanel);
+btnClose2.addEventListener('click', closePanel);
+backdrop.addEventListener('click', closePanel);
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePanel();
 });
