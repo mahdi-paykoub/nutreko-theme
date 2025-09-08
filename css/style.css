@@ -265,6 +265,18 @@ a {
     cursor: pointer;
 }
 
+.text-hover-green-2:hover svg,
+.text-hover-green-2:hover div {
+    transition: .2s;
+    color: #8cff64 !important;
+    cursor: pointer;
+}
+
+.tx-gg div,
+.tx-gg svg {
+    color: #8cff64;
+}
+
 .border-end,
 .border-start,
 .border-bottom,
