@@ -338,15 +338,8 @@ a {
 
 
 
-
-
-
-
-
-
 /* منوی اصلی */
 .main-menu .menu-item {
-    position: relative;
     margin: 0 15px;
 }
 
@@ -391,12 +384,24 @@ a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.menu-static {
+    position: static;
+}
 
 .mega-menu.full-width {
-    position: fixed;
+    position: absolute;
+    top: 100%;
+    /* درست زیر هدر */
+    right: 0;
+    width: 100%;
+    /* کل صفحه */
+    z-index: 999;
+
+
+    /* position: absolute;
     top: 167px;
     right: 0;
-    width: 100vw;
+    width: 100vw; */
     background: #fff;
     z-index: 999;
     pointer-events: none;
@@ -494,7 +499,13 @@ a {
 }
 
 
+.menu-item {
+    position: relative;
+}
 
+.menu-item.static {
+    position: static;
+}
 
 /* زیرمنوها */
 .custom-sidebar .custom-submenu {
@@ -1098,7 +1109,12 @@ a {
 
 .footer-list li a {
     color: #A8A8A8;
+    color: white !important;
 
+}
+
+.pt-footer-6 {
+    padding-top: 5.5em;
 }
 
 .footer-inp:focus {
